@@ -1,3 +1,20 @@
-h1{
-    color: rgb(30, 78, 121);
+/* Спецификация */
+body {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    background-color: #fff;
+    }
+
+.head-bg{
+    background-color: #3c3c3c;
+    width: 1920px;
+    
 }
+.text-head{
+    color: #89929d;
+    margin-left: 165px;
+    margin-top: 15px;
+    }
+
+/* Блок 1 */
