@@ -1,20 +1,99 @@
 /* Спецификация */
 body {
-    font-family: "Avenir Next Cyr", sans-serif;
-    font-size: 12px;
-    line-height: 1.5;
-    background-color: #fff;
-    }
-
-.head-bg{
-    background-color: #3c3c3c;
-    width: 1920px;
-    
+font-family: "Avenir Next Cyr", sans-serif;
+font-size: 12px;
+line-height: 1.5;
+background-color: #fff;
 }
-.text-head{
-    color: #89929d;
-    margin-left: 165px;
-    margin-top: 15px;
-    }
 
+.head{
+background-color: #3c3c3c;
+width: 1920px;
+margin-bottom: 50px;
+
+}
+
+.col-lg-4 {
+padding-right: 0;
+padding-left: 0;
+}
+
+.col-lg-3 {
+padding-right: 0;
+padding-left: 0;
+}
+
+.text-head{
+color: #89929d;
+margin-left: 165px;
+margin-top: 15px;
+
+}
+
+.text-head2{
+color: #89929d;
+margin-top: 15px;
+margin-left: 435px;
+}
+
+.acst{
+color: #a5acb4;
+font-size: 14px;
+font-weight: 600;
+}
+
+.acst:hover{
+color: #b4c2d3;
+text-decoration: none;
+}
+
+.logo{
+margin-left: 165px;
+}
+.logo1{
+margin-left: 55px;
+}
+
+.logo2{
+margin-left: 25px;
+}
+.logo3{
+    margin-left: 25px;
+}
+.phone{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 80px;
+}
+.mail{
+    font-size: 16px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.feedback{
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 1px solid #5ba4dd;
+    margin-left: 57px;
+    cursor: pointer;
+    border-radius; 3px;
+    width: 180px;
+    height: 45px; 
+    text-align: center;
+    padding:7px;
+}
+.text-feed{
+font-size: 16px;
+color: #5ba4dd;
+}
+.feedback:hover{
+    background-color: #5ba4dd;
+    opacity: 1;
+    transition: 0.2s;
+}
+.text-feed:hover{
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    }
 /* Блок 1 */
