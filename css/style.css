@@ -125,34 +125,111 @@ color: #fff;
 margin-right: 10px;
 }
 
+/* Меню */
 
 nav{
 background-color: #4b505c;
 width: 1920px;
 height: 85px;
-opacity: 0.9;
-margin-bottom: -85px;
+position: relative;
 }
+
 .menu{
+margin-left: 75px;
+display: block;
+
+}
+.menu-item{
+font-size: 16px;
 list-style-type: none;
-margin-left: 90px;
+margin-left: 50px;
+margin-top: 30px;
+
 }
 .menu-item a{
-line-height: 80px;
-font-size: 16px;
-color: #ffffff;
+color: #fff;
 text-decoration: none;
-margin: 35px;
-}
-.menu-item a:hover{
-color: #d8d8d8;
 }
 
-.menu ul ul{
-    display: none;
+.menu a:hover{
+color: #dadada;
+
 }
 
 
+/* Выпадающее меню */
+
+nav ul ul{
+display: none;
+margin: 0;
+padding: 0;
+background-color: #4d5055;
+margin-top: 30px;
+
+}
+
+nav ul li:hover>ul{
+display: block;
+position: fixed;
+
+}
+
+.menu-item2{
+list-style-type: none;
+margin-left: 50px;
+margin-top: 30px;
+font-size: 16px;
+
+}
+
+.menu-item2 a{
+color: #fff;
+text-decoration: none;
+}
+
+.drop-item{
+list-style-type: none;
+padding: 15px;
+font-size: 14px;
+
+
+
+}
+
+.drop-item:hover{
+background-color: #666c75;
+transition: 0.3s;
+
+}
+
+.text-head-menu::after{
+content: "";
+position: absolute;
+border: 5px solid;
+border-color: transparent transparent transparent #fff;
+transform: rotate(90deg);
+margin-left: 10px;
+margin-top: 10px;
+}
+
+.background{
+background-color: rgb(114, 30, 30);
+width: 1920px;
+height: 583px;
+position: relative;
+bottom: 0;
+background: #25282D;
+background: #25282D;
+background: -webkit-linear-gradient(bottom, #25282D, #9AA9CE);
+background: -moz-linear-gradient(bottom, #25282D, #9AA9CE);
+background: linear-gradient(to top, #25282D, #9AA9CE);
+opacity: 0.8;
+margin-top: -583px;
+}
+.bg{
+margin-top: -85px;]
+position: relative;
+}
 
 /* Блок 1 */
 
