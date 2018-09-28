@@ -8,47 +8,28 @@ background-color: #fff;
 
 
 @media (min-width: 1200px) {
-	.container {
-    	max-width: 1750px;
-	}
+.container {
+max-width: 1555px;
 }
-
-/* .col-4 {
-padding-right: 0;
-padding-left: 0;
 }
-
-.col-3 {
-padding-right: 0;
-padding-left: 0;
-}
-
-.col-7{
-padding-right: 0;
-padding-left: 0;
-margin-top: 45px;
-} */
 
 /* Хедр */
 
 .head{
 background-color: #3c3c3c;
 margin-bottom: 50px;
-padding-top: 20px;
-padding-bottom: 20px;
+padding-top: 15px;
+padding-bottom: 15px;
 }
 
 .text-head{
 color: #89929d;
-/* margin-left: 150px;
-margin-top: 15px; */
+
 
 }
 
 .text-head2{
 color: #89929d;
-/* margin-top: 15px;
-margin-left: 470px; */
 }
 
 .acst{
@@ -62,99 +43,32 @@ color: #b4c2d3;
 text-decoration: none;
 }
 
-/* .logo{
-margin-left: 165px;
-}
-.logo1{
-margin-left: 55px;
-}
-
-.logo2{
-margin-left: 25px;
-}
-.logo3{
-margin-left: 25px;
-} */
 .phone{
 font-size: 20px;
 font-weight: 600;
-/* margin-left: 80px; */
 }
 
 .mail{
 font-size: 16px;
-/* margin-left: 70px; */
 margin-top: 20px;
 }
 
-.feedback{
-border: 1px solid #5ba4dd;
-display: inline-block;
-line-height: 45px;
-color: #5ba4dd;
-text-align: center;
-font-size: 14px;
-border-radius: 3px;
-cursor: pointer;
-width: 180px;
-height: 50px;
-margin-left: 70px;
-margin-top:5px;
-}
 
-.feedback:hover{
-background-color: #5ba4dd;
-transition: 0.3s;
-color: #fff;
-}
-
-
-.system-edo{
-display: inline-block;
-background-color: #5ba4dd;
-line-height: 45px;
-color: #fff;
-text-align: center;
-font-size: 14px;
-border-radius: 3px;
-cursor: pointer;
-width: 220px;
-height: 50px;
-margin-left: 38px;
-margin-top:5px;
-}
-
-.system-edo:hover{
-background-color: #3981b8;
-transition: 0.5s;
-color: #fff;
-}
 .here{
 margin-right: 10px;
 }
 
 
-
-
-
-
 /*--------------------- Меню ---------------------*/
 
-nav{
-/* margin-left: -70px; */
-/* background-color: #4b505c; */
-}
 
 ul.menu {
-	padding-left: 0;
-	margin-bottom: 0;
+padding-left: 0;
+margin-bottom: 0;
 }
 
 .menu{
 background-color: #4b505c;
-/* width: 1920px; */
-/* height: 85px; */
-/* margin-left: 125px; */
 padding-top: 30px;
 padding-bottom: 30px;
 display: flex;
@@ -164,8 +78,6 @@ justify-content: space-between;
 .menu-item{
 font-size: 16px;
 list-style-type: none;
-/* margin-top: 30px;
-margin-left: 70px; */
 
 }
 
@@ -182,8 +94,6 @@ text-decoration: none;
 
 .menu-item2{
 list-style-type: none;
-/* margin-left: 50px;
-margin-top: 30px; */
 font-size: 16px;
 }
 
@@ -239,36 +149,27 @@ margin-left: 10px;
 margin-top: 10px;
 }
 
-.background-gradient{
-background-color: rgb(248, 35, 35);
-width: 1920px;
-height: 583px;
-position: relative;
-bottom: 0;
-background: #25282D;
+
+
+.bg	{
+background-color: rgba(37, 40, 45, 1);
 background: -webkit-linear-gradient(bottom, #25282D, #9AA9CE);
 background: -moz-linear-gradient(bottom, #25282D, #9AA9CE);
 background: linear-gradient(to top, #25282D, #9AA9CE);
 opacity: 0.8;
-margin-top: -583px;
 }
 
-.bg	{
-/* margin-top: -101px;
-position: fixed; */
-	/* position: relative; */
-	background-color: rgba(37, 40, 45, 1);
-	background: -webkit-linear-gradient(bottom, #25282D, #9AA9CE);
-background: -moz-linear-gradient(bottom, #25282D, #9AA9CE);
-background: linear-gradient(to top, #25282D, #9AA9CE);
-opacity: 0.8;
+
+.bg-block-01 {
+background: url(../img/background.png) no-repeat;
+background-size: cover;
+color: #fff;
+}
+.bg-menu {
+background-color: #4b505c;
 }
 
-/* .sasp{
-margin-left: 165px;
-margin-top: 180px;
-position: fixed;
-} */
+
 
 .sasp-logo{
 opacity: 0;
@@ -332,12 +233,12 @@ line-height: 35px;
 }
 
 .btn{
-    color: #ffffff;
-    display: block;
+color: #ffffff;
+display: block;
 }
 
 .btn:hover{
-    color: #ffffff;
+color: #ffffff;
 }
 
 
@@ -359,12 +260,3 @@ text-decoration: none;
 
 
 /*--------------------- Блок 1 ---------------------*/
-
-.bg-block-01 {
-	background: url(../img/background.png) no-repeat;
-    background-size: cover;
-    color: #fff;
-}
-.bg-menu {
-	background-color: #4b505c;
-}
