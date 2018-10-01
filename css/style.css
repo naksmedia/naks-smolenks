@@ -1,4 +1,5 @@
-/* Спецификация */
+/*--------------------- Спецификация ---------------------*/
+
 body {
 font-family: "Avenir Next Cyr", sans-serif;
 font-size: 12px;
@@ -13,18 +14,22 @@ max-width: 1555px;
 }
 }
 
-/* Хедр */
+p{
+margin: 0;
+}
+
+/*--------------------- Хедр ---------------------*/
+
 
 .head{
 background-color: #3c3c3c;
-margin-bottom: 50px;
 padding-top: 15px;
 padding-bottom: 15px;
 }
 
 .text-head{
 color: #89929d;
-
+font-weight: 550;
 
 }
 
@@ -43,19 +48,91 @@ color: #b4c2d3;
 text-decoration: none;
 }
 
-.phone{
+
+/*--------------------- Хедр 2 ---------------------*/
+
+
+.head-block2{
+padding: 50px;
+}
+
+.logo1{
+margin-left: 110px;
+}
+.logo2{
+margin-left: 25px;
+}
+.logo3{
+margin-left: 25px;
+}
+
+.tel a{
+display: block;
 font-size: 20px;
 font-weight: 600;
+margin-left: 65px;
+text-decoration: none;
+color: #000;
 }
 
-.mail{
-font-size: 16px;
-margin-top: 20px;
+.mail a{
+font-size: 14px;
+margin-left: 70px;
+font-weight: 500;
+text-decoration: none;
+color: #000;
 }
 
 
-.here{
-margin-right: 10px;
+.feedback{
+border: 1px solid #5ba4dd;
+border-radius: 3px;
+text-align: center;
+line-height: 40px;
+width: 160px;
+height: 45px;
+margin-left: 75px;
+}
+.feedback:hover{
+background-color: #5ba4dd;
+transition: 0.3s;
+}
+
+.button-text{
+color: #5ba4dd;
+text-decoration: none;
+display: block;
+font-size: 14px;
+}
+.button-text:hover{
+text-decoration: none;
+color: #fff;
+
+}
+
+.button-system-edo{
+background-color: #5ba4dd;
+border-radius: 3px;
+text-align: center;
+line-height: 40px;
+width: 200px;
+height: 45px;
+margin-left: 30px;
+}
+.button-system-edo:hover{
+background-color: #307bb4;
+transition: 0.3s;
+}
+
+.button-system-edo{
+color: #fff;
+text-decoration: none;
+display: block;
+font-size: 14px;
+}
+.button-system-edo:hover{
+text-decoration: none;
+color: #fff;
 }
 
 
@@ -68,7 +145,7 @@ margin-bottom: 0;
 }
 
 .menu{
-background-color: #4b505c;
+background-color: rgb(75, 80, 92);
 padding-top: 30px;
 padding-bottom: 30px;
 display: flex;
@@ -102,9 +179,6 @@ color: #fff;
 text-decoration: none;
 }
 
-.arrow-head-menu:hover{
-color: #dadada;
-}
 
 
 /*--------------------- Выпадающее меню ---------------------*/
@@ -116,7 +190,6 @@ margin: 0;
 padding: 0;
 background-color: #4d5055;
 margin-top: 5px;
-
 }
 
 .menu-item2:hover .drop-menu{
@@ -150,13 +223,13 @@ margin-top: 10px;
 }
 
 
+/*--------------------- Фон+информация ---------------------*/
 
 .bg	{
 background-color: rgba(37, 40, 45, 1);
 background: -webkit-linear-gradient(bottom, #25282D, #9AA9CE);
 background: -moz-linear-gradient(bottom, #25282D, #9AA9CE);
 background: linear-gradient(to top, #25282D, #9AA9CE);
-opacity: 0.8;
 }
 
 
@@ -167,95 +240,89 @@ color: #fff;
 }
 .bg-menu {
 background-color: #4b505c;
+margin-bottom: 65px;
 }
-
-
 
 .sasp-logo{
-opacity: 0;
-background-color: #4973c5;
-width: 280px;
-height: 95px;
-margin-top: 20px;
-color: #fff;
-padding: 10px 15px;
-font-size: 14px;
-position: fixed;
+margin-bottom: 15px;
 }
 
-.sasp-logo::after{
+.sasp-logo-info{
+background-color: #4973c5;
+width: 270px;
+height: 85px;
+font-size: 14px;
+padding: 10px 20px;
+opacity: 0;
+position: absolute;
+}
+
+.sasp-logo:hover .sasp-logo-info{
+opacity: 1;
+transition: 0.2s ease;
+margin-top: 15px;
+}
+
+.site-sasp{
+color: #fff;
+margin-left: 75px;
+margin-top: -63px;
+} 
+
+.site-sasp a:hover{
+color: #cecece;
+text-decoration: none;
+}
+
+
+.sasp-logo-info::after{
 content: "";
 position: absolute;
 border: 5px solid;
 border-color: transparent transparent transparent #fff;
 transform: rotate(-90deg);
-margin-left: 24px;
-margin-top: -112px;
+margin-top: -41px;
+margin-left: 18px;
 }
 
-.sasp:hover .sasp-logo{
-opacity: 1;
-transition: 0.5s;
-margin-top: 15px;
+.text-cok{
+font-size: 30px;
+text-transform: uppercase;
+margin-bottom: 35px;
+
 }
 
-.text-sasp{
-font-size: 16px;
-font-weight: 600;
-margin-top: 7px;
-}
-
-.site{
-color: #fff;
-font-weight: 650px;
-margin-left: 125px;
-text-decoration: none;
-}
-
-.site:hover{
-color: #d4d4d4;
-text-decoration: none;
-transition: 0.2s;
-}
-
-
-.text1{
-font-size: 35px;
-color: #fff;
-margin-top: 50px;
-}
-
-.text3{
+.text2{
 font-size: 20px;
-font-weight: 350;
-color: #fff;
-line-height: 35px;
-}
-
-.btn{
-color: #ffffff;
-display: block;
-}
-
-.btn:hover{
-color: #ffffff;
+margin-bottom: 45px;
 }
 
 
-.podat-zayavku{
-display: inline-block;
-background-color: #ff4f4f;
-text-align: center;
-font-size: 14px;
+.button-zayavka-online{
+background-color: #ff5d5d;
 border-radius: 3px;
-cursor: pointer;
-padding: 10px 10px 10px 10px ;
+text-align: center;
+line-height: 55px;
+width: 200px;
+height: 45px;
+margin-left: 30px;
+width: 320px;
+height: 55px;
+}
+.button-zayavka-online:hover{
+background-color: #e63838;
+transition: 0.3s;
 }
 
-.podat-zayavku:hover{
-background-color: #e43d3d;
-transition: 0.5s;
+.button-zayavka{
+color: #fff;
+display: block;
+font-size: 16px;
+text-transform: uppercase;
+}
+.button-zayavka:hover{
 text-decoration: none;
+color: #fff;
 }
 
 
