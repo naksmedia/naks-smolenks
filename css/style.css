@@ -228,6 +228,33 @@ margin-top: 10px;
 background-color: #4b505c;
 }
 
+
+form {
+position: relative;
+margin: 0 auto;
+background: transparent;
+border-bottom: #fff;
+}
+input, button {
+border: none;
+outline: none;
+background: transparent;
+}
+input {
+width: 100%;
+height: 42px;
+padding-left: 15px;
+}
+
+button {
+height: 42px;
+width: 42px;
+position: absolute;
+top: 0;
+right: 0;
+cursor: pointer;
+}
+
 /*--------------------- Фон + информация ---------------------*/
 
 .bg-block-01 {
@@ -521,7 +548,7 @@ max-width: 20%;
 }
 
 
-/*--------------------- Блок 2 Новости ---------------------*/
+/*--------------------- Блок 2 Новости (левый блок - 1) ---------------------*/
 
 
 .news__header{
@@ -541,6 +568,8 @@ color: #fff;
 .naks__news__tag{
 padding: 35px;
 font-size: 14px;
+color: #fff;
+margin-bottom: 65px;
 }
 
 .text__to__news{
@@ -549,14 +578,10 @@ font-weight: 550;
 color: #fff;
 }
 
-.naks__news__tag{
-color: #fff;
-margin-bottom: 65px;
-}
 
 .die__for__text{
 background-color: rgb(45, 69, 125, 0.8);
-width: 85%;
+width: 80%;
 padding: 35px;
 opacity: 0;
 }
@@ -583,6 +608,44 @@ transition: 0.3s;
 margin-top: 100px;
 }
 
+
+
+/*--------------------- Блок 2 Новости (левый блок - 2) ---------------------*/
+
+.text__to__news__two{
+font-size: 20px;
+font-weight: 550;
+color: #fff;
+}
+
+
+
+.die__for__text__two{
+background-color: rgb(45, 69, 125, 0.8);
+width: 30%;
+padding: 35px;
+opacity: 0;
+}
+
+.block__news__box__two{
+background-color: rgba(104, 104, 104, 0.5);
+border-radius: 3px;
+margin-bottom: 20px;
+width: 100%;
+height: 402px;
+}
+
+.block__news__box__two:hover .die__for__text__two{
+opacity: 1;
+transition: 0.3s;
+margin-top: 100px;
+}
+
+
+
+
+
+
 /*--------------------- Блок 2 Новости (правый блок) ---------------------*/
 
 .date__number__two{
@@ -590,66 +653,61 @@ font-size: 12px;
 font-weight: 300;
 position: absolute;
 color: #5b5b5b;
-padding-top: 35px;
-padding-left: 35px
 }
 
 .naks__news__tag__two{
-color: #5b5b5b;
-padding-top: 35px;
-padding-right: 35px;
-margin-bottom: 25px;
+color: #568aff;
+margin-bottom: 15px;
+
 }
 
 .block__agreements{
-background-color: #f8f8f8;
+background-color: #f7f7f7;
 border-radius: 3px;
+padding: 35px;
 }
 
+
 .agreements__header__text{
-padding-left: 35px;
-padding-right: 35px;
-padding-bottom: 10px;
 font-weight: 550;
-font-size: 16px;
+font-size: 14px;
+margin-bottom:  20px;
 }
 
 .subtitle__text{
-padding-left: 35px;
-padding-right: 35px;
-padding-bottom: 15px;
 font-size: 14px;
 font-weight: 300;
+margin-bottom: 20px;
 }
 
 .button__download{
 background-color: #ececec;
-width: 40%;
 text-align: center;
 border-radius: 3px;
-margin-left: 35px;
-opacity: 0;
+width: 45%;
+padding: 10px;
 }
 
 .button__download__text{
 color: #4d4d4d;
 display: block;
-padding: 12px;
 font-size: 12px;
 font-weight: 500;
+}
+
+.button__download__text:hover{
+color: #4d4d4d;
 }
 
 .button__download:hover{
 background-color: #e7e7e7;
 }
 
+.button__download:active{
+background-color: #e4e4e4;
+}
+
 .icon__doc{
 padding-right: 10px;
 width: 23px;
-}
-
-.block__agreements:hover .button__download{
-opacity: 1;
-margin-top: 25px;
-transition: 0.3s;
 }
