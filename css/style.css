@@ -228,25 +228,41 @@ margin-top: 10px;
 background-color: #4b505c;
 }
 
+/* Форма поиска */
 
 form {
 position: relative;
 margin: 0 auto;
-background: transparent;
-border-bottom: #fff;
+height: 42px;
 }
-input, button {
+
+input {
+height: 33px;
+width: 0;
+padding: 0 42px 0 0px;
 border: none;
+border-bottom: 1px solid transparent;
 outline: none;
 background: transparent;
+transition: 0.2s;
+position: absolute;
+top: 0;
+right: 0;
+z-index: 2;
+color: #fff;
 }
-input {
-width: 100%;
-height: 42px;
-padding-left: 15px;
+
+input:focus {
+width: 45%;
+z-index: 1;
+margin-left: 15px;
+border-bottom: 1px solid rgb(255, 255, 255);
+margin-right: 50px;
 }
 
 button {
+background: transparent;
+border: none;
 height: 42px;
 width: 42px;
 position: absolute;
@@ -254,6 +270,21 @@ top: 0;
 right: 0;
 cursor: pointer;
 }
+
+button:before {
+font-size: 16px;
+color: #F9F0DA;
+}
+
+::-webkit-input-placeholder{
+color: #fff;
+font-size: 14px;
+font-weight: 200;
+}
+
+/* end форма поиска */
+
+
 
 /*--------------------- Фон + информация ---------------------*/
 
@@ -548,7 +579,7 @@ max-width: 20%;
 }
 
 
-/*--------------------- Блок 2 Новости (левый блок - 1) ---------------------*/
+/*--------------------- Блок 2 Новости (block left - 1) ---------------------*/
 
 
 .news__header{
@@ -594,8 +625,9 @@ border-radius: 3px;
 opacity: 1;
 }
 
+
 .block__news__box{
-background-color: rgba(104, 104, 104, 0.5);
+background-color: rgba(104, 104, 104, 0.4);
 border-radius: 3px;
 margin-bottom: 20px;
 width: 100%;
@@ -610,7 +642,7 @@ margin-top: 100px;
 
 
 
-/*--------------------- Блок 2 Новости (левый блок - 2) ---------------------*/
+/*--------------------- Блок 2 Новости (block right - 2) ---------------------*/
 
 .text__to__news__two{
 font-size: 20px;
@@ -628,11 +660,19 @@ opacity: 0;
 }
 
 .block__news__box__two{
-background-color: rgba(104, 104, 104, 0.5);
+background-color: rgba(104, 104, 104, 0.4);
 border-radius: 3px;
 margin-bottom: 20px;
 width: 100%;
 height: 402px;
+}
+
+.block__img__news__two{
+background: url(../img/news__photo_2.png) no-repeat;
+background-size: cover;
+width: 100%;
+border-radius: 3px;
+opacity: 1;
 }
 
 .block__news__box__two:hover .die__for__text__two{
