@@ -22,5 +22,9 @@
 }
 
 
-
+@font-face {
+	font-family: 'MinionPro';
+	src: url('MinionPro-Bold.otf');
+	src: url('MinionPro-Regular.otf') format('embedded-opentype'),
+}
 
