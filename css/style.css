@@ -5,7 +5,6 @@ font-family: "Avenir Next Cyr", sans-serif;
 font-size: 12px;
 line-height: 1.5;
 background-color: #fff;
-height: 6000px;
 }
 
 
@@ -41,7 +40,6 @@ padding-bottom: 15px;
 .text-head{
 color: #89929d;
 font-weight: 550;
-
 }
 
 .text-head2{
@@ -452,33 +450,6 @@ margin-left: 5px;
 transition: 0.2s ease;
 }
 
-/* .pf__arrow__1::after{
-content: "";
-border-bottom: 2px solid;
-border-left: 2px solid;
-transform: rotate(-135deg);
-border-radius: 3px;
-width: 23px;
-height: 23px;
-border-color: #d4d4d4;
-position: absolute;
-margin-top: -10px;
-}
-
-.pf__arrow__2::after{
-content: "";
-border-bottom: 2px solid;
-border-left: 2px solid;
-transform: rotate(-135deg);
-border-radius: 3px;
-width: 23px;
-height: 23px;
-border-color: #d4d4d4;
-position: absolute;
-margin-left: 118px;
-margin-top: -10px;
-} */
-
 .center-text{
 font-size: 22px;
 font-weight: 450;
@@ -552,7 +523,7 @@ max-width: 1215px;
 margin-bottom: 20px;
 }
 
-.block__uslug__one{
+.block__uslug__one {
 font-size: 14px;
 font-weight: 400;
 margin-bottom: 15px;
@@ -691,9 +662,6 @@ transition: 0.3s;
 margin-top: 100px;
 }
 
-.news__block{
-margin-bottom: px;
-}
 
 
 
@@ -781,9 +749,6 @@ margin-bottom: 35px;
 }
 
 .articles__box:hover{
-/* box-shadow:5px 5px 2px 0px rgba(0,0,0,0.06);
--webkit-box-shadow:5px 5px 2px 0px rgba(0,0,0,0.06);
--moz-box-shadow:5px 5px 2px 0px rgba(0,0,0,0.06); */
 transform: scale(1.02, 1.02);
 background-color: #d5eafd;
 transition: 0.3s;
@@ -814,7 +779,13 @@ color: #fff;
 
 .read__text__button:hover{
 color: #fff;
+background-color: #657397;
 }
+
+.read__text__button:active{
+background-color: #515f85;
+}
+
 
 .arrow__next__two{
 margin-left: 10px;
@@ -833,11 +804,13 @@ font-weight: 500;
 font-size: 24px;
 color: #fff;
 font-weight: 500;
+
 }
 
 .ask__text__small{
 font-size: 14px;
 color: #fff;
+margin-top: 25px;
 }
 
 .ask__box{
@@ -860,7 +833,7 @@ border-radius: 3px;
 padding: 8px 20px 12px;
 color: #fff;
 font-size: 16px;
-position: relative;
+margin-left: 25px;
 }
 
 .ask__button__text:hover{
@@ -873,3 +846,185 @@ background-color: rgb(255, 255, 255, 0.3);
 color: #fff;  
 }
 
+/*--------------------- Блок 4 Search work ---------------------*/
+
+
+
+.search__work__box{
+padding: 35px;
+border-radius: 3px;
+background: rgba(33, 79, 165, 1.0);
+background: -webkit-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
+background: -moz-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
+background: linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
+}
+
+.search__text__header{
+font-size: 18px;
+color: #fff;
+}
+
+.button__search__work{
+background-color: #ffdc4e;
+color: #000;;
+border-radius: 3px; 
+padding: 8px 20px 12px;
+margin-left: 25px;
+}
+
+.adress__site_bw{
+text-transform: uppercase;
+font-weight: 600;
+font-size: 25px;
+margin-top: 30px;
+color: #fff;
+}
+
+.button__place__a__job{
+font-size: 16px;
+color: #fff;
+font-weight: 300;
+}
+
+.button__place__a__job:hover{
+color: #fff;
+margin-left: 5px;
+transition: 0.2s;
+}
+
+.arrow__next__tree{
+margin-left: 5px;
+}
+
+.search__box__img{
+background: url(../img/search__work.png) no-repeat;
+background-size: cover;
+border-radius: 3px;
+}
+
+.search__box__img:hover{
+transform: scale(1.02, 1.02);
+transition: 0.3s;
+}
+
+
+/*--------------------- Блок 4 Journal ---------------------*/
+
+.journal__box{
+padding: 35px;
+border-radius: 3px;
+background: rgba(33, 79, 165, 1.0);
+background: -webkit-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
+background: -moz-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
+background: linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
+}
+
+
+
+.journal__box__img{
+background: url(../img/journal__img.png) no-repeat;
+background-size: cover;
+border-radius: 3px;
+}
+
+.journal__box__img:hover{
+transform: scale(1.02, 1.02);
+transition: 0.3s;
+}
+
+.journal__img__header{
+margin-bottom: 12px;
+width: 100%;
+}
+
+.journal__text{
+font-size: 14px;
+color: #fff;
+}
+
+.button__svarka{
+font-size: 20px;
+color: #fff;
+font-weight: 300;
+}
+
+.button__svarka:hover{
+color: #fff;
+margin-left: 5px;
+transition: 0.2s;
+}
+
+/*--------------------- Блок 4 Our client ---------------------*/
+
+.our__client__block{
+margin-bottom: 50px;
+}
+
+/*--------------------- Footer ---------------------*/
+
+.footer__box{
+background-color: #333333;
+}
+
+.logo__gray{
+margin-top: 50px;
+margin-bottom: 20px;
+}
+
+.footer__text__left{
+color: #858585;
+font-size: 12px;
+margin-bottom: 25px;
+}
+
+.line__footer{
+border-bottom: 1px #7d7b7a solid;
+margin-bottom: 35px;
+width: 55%;
+}
+
+.sasp__logo__gray{
+margin-bottom: 50px;
+}
+
+.menu__footer{
+padding: 55px 0px 0px 0px;
+margin-bottom: 60px;
+}
+
+.menu__footer li{
+color: #fff;
+font-size: 14px;
+font-weight: 400;   
+}
+
+.menu__footer li:hover{
+color: #e0e0e0;
+}
+
+.basement__footer{
+background-color: #3c3c3c;
+}
+
+.basement__text{
+color: #858585;
+font-size: 12px;
+font-weight: 400;    
+}
+
+
+.subscribe__form {
+    height: 33px;
+    width: 0;
+    padding: 0 42px 0 0px;
+    border: none;
+    border-bottom: 1px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: 0.2s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    color: #fff;
+}

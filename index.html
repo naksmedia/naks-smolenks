@@ -17,9 +17,9 @@
     crossorigin="anonymous">
 
   <!-- SCRIPT -->
-  <link rel="stylesheet" href="css/fonts.css">
+  <!-- <link rel="stylesheet" href="fonts/font.css"> -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="js/script.js">
+  <link rel="stylesheet" href="css/animate.css">
 
   <!-- HEADER -->
 </head>
@@ -289,19 +289,19 @@
     </div>
   </div>
 
-  <!-- Block uslug -->
+  <!-- Services block -->
 
   <div class="block__uslugi">
     <div class="container">
       <div class="row">
         <div class="col-2">
-          <p class="content__header__uslugi">Услуги Центра</p>
+          <p class="content__header__uslugi ">Услуги Центра</p>
         </div>
       </div>
 
       <!-- services block 1 -->
 
-      <div class="box__uslug">
+      <div class="box__uslug ">
         <div class="row d-flex">
           <div class="col">
             <div class="block__uslug__one">
@@ -379,7 +379,7 @@
 
       </div>
 
-      <div class="box__uslug__two">
+      <div class="box__uslug__two  ">
         <div class="row d-flex">
           <div class="col">
             <div class="block__uslug__one">
@@ -457,7 +457,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <p class="news__header">Новости
+          <p class="news__header  ">Новости
             <a href="#" class="all__news__button float-right">
               Все новости <img src="img/arrow__next-01.png" alt="">
             </a>
@@ -490,7 +490,7 @@
 
         <div class="col-6">
           <a href="">
-            <div class="block__news__two">
+            <div class="block__news__two ">
               <div class="block__img__news__two">
                 <div class="block__news__box__two">
                   <div class="date">
@@ -512,17 +512,17 @@
     </div>
   </div>
 
-  <div class="news__block">
+  <div class="news__block__two">
     <div class="container">
       <div class="row">
         <div class="col">
-          <p class="news__header">Недавние новости</p>
+          <p class="news__header ">Недавние новости</p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-3">
-          <div class="block__agreements">
+          <div class="block__agreements ">
             <div class="date">
               <p class="date__number__two text-left">
                 10 Июля 2018 </p>
@@ -547,7 +547,7 @@
         </div>
 
         <div class="col-3">
-          <div class="block__agreements">
+          <div class="block__agreements animated ">
             <div class="date">
               <p class="date__number__two text-left">
                 10 Июля 2018 </p>
@@ -627,11 +627,11 @@
   <!-- end news block -->
 
   <!-- Articles -->
-  <div class="news__block">
+  <div class="articles__block">
     <div class="container">
       <div class="row">
         <div class="col">
-          <p class="news__header">Статьи
+          <p class="news__header ">Статьи
             <a href="#" class="all__news__button float-right">
               Все статьи <img src="img/arrow__next-01.png" alt="">
             </a>
@@ -641,7 +641,7 @@
 
       <div class="row">
         <div class="col-4">
-          <div class="articles__box">
+          <div class="articles__box ">
             <p class="date__articles text-right">
               10 Июля, 2018
             </p>
@@ -707,26 +707,67 @@
 
 
   <!-- info block -->
-  <div class="news__block">
+  <div class="info__block">
     <div class="container">
       <div class="row">
         <div class="col-4">
-          <div class="ask__box">
-            <p class="ask__text__header">
-              Возникли вопросы?
-              <div class="ask__button text-right">
+          <div class="ask__box ">
+            <div class="ask__text__header">
+              <p class="ask__text">
+                Возникли вопросы?
                 <a href="#" class="ask__button__text">
                   Задать вопрос
                 </a>
-              </div>
-            </p>
+              </p>
+            </div>
             <p class="ask__text__small">
               Воспользуйтесь формой <br>
               <strong>«Задать вопрос»</strong> <br>
               и наш специалист ответит вам <br>
               в ближайшее время
             </p>
+          </div>
+        </div>
 
+        <div class="col-4">
+          <div class="search__box__img">
+            <div class="search__work__box">
+              <div class="search__text__header">
+                <p class="search__text">
+                  Поиск работы <br>
+                  в области сварки
+                  <a href="#" class="button__search__work text-right">
+                    Найти работу
+                  </a>
+                </p>
+              </div>
+              <p class="adress__site_bw">
+                bewelder.ru
+              </p>
+
+              <a href="#" class="button__place__a__job">
+                Разместить вакансию <img src="img/arrow__next-02.png" class="arrow__next__tree" alt="">
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="journal__box__img">
+            <div class="journal__box">
+              <div class="journal__img__header">
+                <img src="img/journal__logo.png" alt="">
+              </div>
+              <p class="journal__text">
+                Научно-технический и производственный <br>
+                журнал по сварке, контролю и диагностике
+              </p>
+              <a href="#" class="button__svarka">
+                svarka.naks.ru
+              </a>
+
+            </div>
           </div>
         </div>
 
@@ -737,15 +778,111 @@
   <!-- end info block -->
 
 
-  <!-- footer -->
-  <div class="footer">
+  <!-- our client -->
+  <div class="our__client__block">
     <div class="container">
       <div class="row">
-        <div class="col"></div>
+        <div class="col">
+          <p class="news__header">
+            Наши клиенты
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col">
+          <img src="img/img_logo_company-01.png" alt="">
+        </div>
+        <div class="col">
+          <img src="img/img_logo_company-02.png" alt="">
+        </div>
+        <div class="col">
+          <img src="img/img_logo_company-03.png" alt="">
+        </div>
+        <div class="col">
+          <img src="img/img_logo_company-04.png" alt="">
+        </div>
+        <div class="col">
+          <img src="img/img_logo_company-05.png" alt="">
+        </div>
+        <div class="col">
+          <img src="img/img_logo_company-06.png" alt="">
+        </div>
+        <div class="col">
+          <img src="img/img_logo_company-07.png" alt="">
+        </div>
+        <div class="col">
+          <img src="img/img_logo_company-08.png" alt="">
+        </div>
+
       </div>
     </div>
   </div>
-  <!-- end end footer -->
+
+  <!-- our client -->
+
+  <!-- footer -->
+
+
+  <div class="footer__box">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="logo__gray">
+            <img src="img/logo__gray.png" alt="">
+          </div>
+          <div class="footer__text__left">
+            <p>Организация является членом Саморегулируемая организация Ассоциация «НАКС».</p>
+          </div>
+          <div class="line__footer">
+          </div>
+          <div class="sasp__logo__gray">
+            <img src="img/sasp__gray__logo.png" alt="">
+          </div>
+        </div>
+        <div class="col-6">
+          <ul class="menu__footer d-flex justify-content-between">
+            <a href="">
+              <li>О Центре</li>
+            </a>
+            <a href="">
+              <li>Услуги</li>
+            </a>
+            <a href="">
+              <li>Руководящий состав</li>
+            </a>
+            <a href="">
+              <li>Документы</li>
+            </a>
+            <a href="">
+              <li>Выписка из реестра САСв</li>
+            </a>
+          </ul>
+          <div class="subscription__form">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="basement__footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <p class="basement__text">
+            ООО «НЭКС» © 2004-2018 | Все права защищены
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- end footer -->
 
 
 
@@ -755,6 +892,10 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+
+  <script src="js/js.script"></script>
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
