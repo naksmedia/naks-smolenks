@@ -18,7 +18,6 @@ p{
 margin: 0;
 }
 
-
 .row a{
 text-decoration: none;
 list-style: none;
@@ -37,14 +36,17 @@ padding-top: 15px;
 padding-bottom: 15px;
 }
 
-.text-head{
+.head__text__adres{
 color: #89929d;
 font-weight: 550;
 }
 
-.text-head2{
+.head__text__numbercok__two {
 color: #89929d;
+font-size: 14px;
+font-weight: 500;
 }
+
 
 .acst{
 color: #a5acb4;
@@ -61,102 +63,88 @@ text-decoration: none;
 /*--------------------- Хедр 2 ---------------------*/
 
 
-.head-block2{
+.header__block__two{
 padding: 50px;
 }
 
-.logo1{
-margin-left: 110px;
-}
-.logo2{
-margin-left: 25px;
-}
-.logo3{
-margin-left: 25px;
+.logo__block img{
+padding: 0 15px;;
 }
 
-.tel a{
-display: block;
-font-size: 20px;
-font-weight: 600;
-margin-left: 65px;
-text-decoration: none;
+.header__number{
+font-size: 24px;
 color: #000;
+font-weight: 550;
 }
 
-.mail a{
+.header__mail{
 font-size: 14px;
-margin-left: 70px;
+color: #000;
+font-weight: 400;
+}
+
+.box__feedback{
+}
+
+.overlay {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: #383838;
+transition: opacity 500ms;
+visibility: hidden;
+opacity: 0;
+z-index: 10000;
+}
+
+.overlay:target {
+visibility: visible;
+opacity: 1;
+}
+
+.popup {
+padding-top: 400px;
+position: relative;
+transition: all 2s ease-in-out;
+}
+
+.popup p{
+color: #fff;
+font-size: 24px;
 font-weight: 500;
-text-decoration: none;
-color: #000;
+margin-left: 150px;
 }
 
-/* .button__feedback{
-border: 1px solid #5ba4dd;
-border-radius: 3px;
-text-align: center;
-padding: 10px;
-width: 160px;
-height: 45px;
-margin-left: 75px;
-} */
-
-/* .button__feedback:hover{
-background-color: #5ba4dd;
-transition: 0.3s;
-} */
-
-.button__text{
-border: 1px solid #5ba4dd;
-border-radius: 3px;
-display: block;
-font-size: 14px;
-width: 200px;
-height: 45px;
-line-height: 40px;
-text-align: center;
-margin-left: 35px;
+.button__zayavka{
 color: #5ba4dd;
-}
-
-
-
-.button__text:hover{
-color: #fff;
-}
-
-.button__text:hover{
-background-color: #5ba4dd;
-transition: 0.2s;
-}
-
-.button-system-edo{
-background-color: #5ba4dd;
+border: 1px #5ba4dd solid;
+padding: 15px 35px;
 border-radius: 3px;
-text-align: center;
-padding: 10px;
-width: 200px;
-height: 45px;
-margin-left: 30px;
-}
-
-.button-system-edo:hover{
-background-color: #307bb4;
-transition: 0.3s;
-}
-
-.button-system-edo{
-color: #fff;
-text-decoration: none;
-display: block;
 font-size: 14px;
-}
-.button-system-edo:hover{
-text-decoration: none;
-color: #fff;
+font-weight: 500;
 }
 
+
+.button__main{
+border: 1px #fff solid;
+padding: 12px 35px;
+border-radius: 3px;
+}
+
+.popup .close {
+position: absolute;
+transition: all 200ms;
+font-size: 15px;
+font-weight: bold;
+text-decoration: none;
+color: #ffffff;
+}
+.popup .content {
+max-height: 30%;
+overflow: auto;
+}
 
 /*--------------------- Меню ---------------------*/
 
@@ -303,7 +291,6 @@ color: #fff;
 width: 100%;
 height: 585px;;
 }
-
 
 
 .blog-info{
@@ -497,9 +484,16 @@ text-decoration: none;
 }
 
 .button__ob_uslugax__text:hover{
-color: #ffffff;
-text-decoration: none;
+background-color: rgb(255, 255, 255, 0.1);
+color: #fff;
 }
+
+.button__ob_uslugax__text:active{
+background-color: rgb(255, 255, 255, 0.3);
+color: #fff;  
+}
+
+
 
 /*--------------------- Блок 1 ---------------------*/
 
@@ -848,8 +842,6 @@ color: #fff;
 
 /*--------------------- Блок 4 Search work ---------------------*/
 
-
-
 .search__work__box{
 padding: 35px;
 border-radius: 3px;
@@ -907,7 +899,6 @@ transform: scale(1.02, 1.02);
 transition: 0.3s;
 }
 
-
 /*--------------------- Блок 4 Journal ---------------------*/
 
 .journal__box{
@@ -918,8 +909,6 @@ background: -webkit-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(5
 background: -moz-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
 background: linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
 }
-
-
 
 .journal__box__img{
 background: url(../img/journal__img.png) no-repeat;
@@ -975,6 +964,7 @@ margin-bottom: 20px;
 color: #858585;
 font-size: 12px;
 margin-bottom: 25px;
+font-weight: 500;
 }
 
 .line__footer{
@@ -995,7 +985,8 @@ margin-bottom: 60px;
 .menu__footer li{
 color: #fff;
 font-size: 14px;
-font-weight: 400;   
+font-weight: 400;
+padding: 0px 15px;
 }
 
 .menu__footer li:hover{
@@ -1004,6 +995,7 @@ color: #e0e0e0;
 
 .basement__footer{
 background-color: #3c3c3c;
+padding: 15px;
 }
 
 .basement__text{
@@ -1013,18 +1005,70 @@ font-weight: 400;
 }
 
 
-.subscribe__form {
-    height: 33px;
-    width: 0;
-    padding: 0 42px 0 0px;
-    border: none;
-    border-bottom: 1px solid transparent;
-    outline: none;
-    background: transparent;
-    transition: 0.2s;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    color: #fff;
+.political__konf{
+font-size: 12px;
+color:  #858585;
+font-weight: 500;
+}
+
+.naks__media__logo{
+margin-left: 25px;
+}
+
+.razrabotano__v__naks__media{
+font-size: 12px;    
+font-weight: 500;
+color: #858585;
+}
+
+
+.footer__number{
+padding: 55px 0px 0px 0px;
+color: #fff;
+font-size: 21px;
+font-weight: 500;
+margin-bottom: 15px;
+}
+
+.footer__mail{
+font-size: 16px;
+color: #858585;
+margin-bottom: 15px;
+}
+
+.footer__adres{
+font-size: 12px;
+color: #858585;
+font-weight: 500;
+margin-bottom: 10px;
+}
+
+.adres__on__map{
+margin-bottom: 25px;
+}
+
+.adres__on__map a{
+color: #9c9c9c;
+font-size: 14px;
+font-weight: 500;
+text-decoration: underline;
+}
+
+.footer__button__text{
+color: #fff;
+border: 1px #fff solid;
+border-radius: 3px;
+padding: 12px 25px;
+font-size: 14px;
+}
+
+
+.footer__button__text:hover{
+background-color: rgb(255, 255, 255, 0.1);
+color: #fff;
+}
+
+.footer__button__text:active{
+background-color: rgb(255, 255, 255, 0.3);
+color: #fff;  
 }
