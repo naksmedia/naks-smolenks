@@ -83,7 +83,47 @@ color: #000;
 font-weight: 400;
 }
 
-.box__feedback{
+.button__zayavka{
+color: #5ba4dd;
+border: 1px #5ba4dd solid;
+border-radius: 3px;
+font-size: 14px;
+font-weight: 500;
+background: transparent;
+}
+
+.button__zayavka a{
+display: block;
+padding: 12px 10px;
+color: #5ba4dd;
+}
+
+
+.enter__icon__edo{
+margin-right: 10px;
+}
+
+.button__system__edo{
+color: #5ba4dd;
+border: 1px #5ba4dd solid;
+border-radius: 3px;
+font-size: 14px;
+font-weight: 500;
+background-color: #5ba4dd;
+}
+
+.button__system__edo a{
+display: block;
+padding: 12px 10px;
+color: #fff;
+}    
+
+.button__system__edo:hover{
+background-color: #519ad3
+}
+
+.button__system__edo:active{
+background-color: #3d83b9
 }
 
 .overlay {
@@ -110,20 +150,11 @@ position: relative;
 transition: all 2s ease-in-out;
 }
 
-.popup p{
+.popup{
 color: #fff;
 font-size: 24px;
 font-weight: 500;
 margin-left: 150px;
-}
-
-.button__zayavka{
-color: #5ba4dd;
-border: 1px #5ba4dd solid;
-padding: 15px 35px;
-border-radius: 3px;
-font-size: 14px;
-font-weight: 500;
 }
 
 
@@ -135,7 +166,6 @@ border-radius: 3px;
 
 .popup .close {
 position: absolute;
-transition: all 200ms;
 font-size: 15px;
 font-weight: bold;
 text-decoration: none;
@@ -166,7 +196,6 @@ display: block;
 .menu a{
 color: #fff;
 text-decoration: none;
-
 }
 
 .menu a:hover{
@@ -219,14 +248,13 @@ background-color: #4b505c;
 
 /* Форма поиска */
 
-form {
+.search__block form {
 position: relative;
 margin: 0 auto;
 height: 42px;
 }
 
-input {
-height: 33px;
+.search__block input {
 width: 0;
 padding: 0 42px 0 0px;
 border: none;
@@ -241,7 +269,7 @@ z-index: 2;
 color: #fff;
 }
 
-input:focus {
+.search__block input:focus {
 width: 45%;
 z-index: 1;
 margin-left: 15px;
@@ -249,21 +277,15 @@ border-bottom: 1px solid rgb(255, 255, 255);
 margin-right: 50px;
 }
 
-button {
+
+.sumbit__search {
 background: transparent;
 border: none;
-height: 42px;
-width: 42px;
 position: absolute;
-top: 0;
-right: 0;
 cursor: pointer;
+right: 0;
 }
 
-button:before {
-font-size: 16px;
-color: #F9F0DA;
-}
 
 ::-webkit-input-placeholder{
 color: #fff;
@@ -276,6 +298,11 @@ font-weight: 200;
 
 
 /*--------------------- Фон + информация ---------------------*/
+
+.sasp__logo{
+margin-bottom: 25px;
+}
+
 
 .bg-block-01 {
 background: url(../img/background.png) no-repeat;
@@ -297,98 +324,50 @@ height: 585px;;
 padding: 85px;
 }
 
-.sasp-logo{
-margin-bottom: 25px;
-
-}
-
-.tooltip-main {
-position: relative;
-
-}
-.sasp-logo-info{
-background-color: #4973c5;
-width: 270px;
-height: 85px;
-font-size: 14px;
-padding: 10px 20px;
-position: absolute;
-display: none;
-margin-top: 15px;
-}
-
-.sasp-logo:hover .sasp-logo-info {
-display: block;
-position: absolute;
-z-index: 100000;
-transition: 0.2s;
-}
-
-.site-sasp{
-color: #fff;
-margin-left: 75px;
-margin-top: -63px;
-} 
-
-.site-sasp a:hover{
-color: #cecece;
-text-decoration: none;
-}
-
-
-.sasp-logo-info::after{
-content: "";
-position: absolute;
-border: 5px solid;
-border-color: transparent transparent transparent #fff;
-transform: rotate(-90deg);
-margin-top: -41px;
-margin-left: 18px;
-}
-
-.text-cok{
+.about__organization__text{
 font-size: 30px;
 text-transform: uppercase;
 margin-bottom: 30px;
 }
 
-.text2{
+.about__organization__text__two{
 font-size: 20px;
 margin-bottom: 35px;
 }
 
 
-.button-zayavka-online{
+.button__zayavka__online{
 background-color: #ff5d5d;
 border-radius: 3px;
 text-align: center;
 line-height: 55px;
 width: 45%;
 }
-.button-zayavka-online:hover{
+.button__zayavka__online:hover{
 background-color: #e63838;
 transition: 0.3s;
 }
 
-.button-zayavka{
+.button__zayavka__text{
 color: #fff;
 display: block;
 font-size: 16px;
 text-transform: uppercase;
 }
-.button-zayavka:hover{
+
+.button__zayavka__text:hover{
 text-decoration: none;
 color: #fff;
 }
 
-.button-zayavka:active{
+.button__zayavka__text:active{
 background-color: #c92525;
 border-radius: 3px;
 }
 
 /*--------------------- Фон + информация правая сторона ---------------------*/
 
-.info__p{
+.head__information{
 font-size: 24px;
 text-transform: uppercase;
 font-weight: 100;
@@ -821,6 +800,10 @@ transform: scale(1.02, 1.02);
 transition: 0.3s;
 }
 
+.ask__a__question{
+width: 100%;
+}
+
 .ask__button__text{
 border: 1px #fff solid;
 border-radius: 3px; 
@@ -996,6 +979,7 @@ color: #e0e0e0;
 .basement__footer{
 background-color: #3c3c3c;
 padding: 15px;
+
 }
 
 .basement__text{
@@ -1061,7 +1045,6 @@ border-radius: 3px;
 padding: 12px 25px;
 font-size: 14px;
 }
-
 
 .footer__button__text:hover{
 background-color: rgb(255, 255, 255, 0.1);

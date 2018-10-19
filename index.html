@@ -36,7 +36,10 @@
           </div>
         </div>
         <div class="col-6">
-          <div class="head__text__numbercok__two float-right">ООО «НАКС Хабаровск» в реестрах НАКС: <a href="#" class="acst">АЦСТ-11</a></div>
+          <div class="head__text__numbercok__two float-right">
+            ООО «НАКС Хабаровск» в реестрах НАКС:
+            <a href="#" class="acst">АЦСТ-11</a>
+          </div>
         </div>
       </div>
     </div>
@@ -46,7 +49,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-3">
-          <img src="img/logo.png" class="logo" alt="">
+          <img src="img/logo.png" class="header__logo__center" alt="">
         </div>
         <div class="col-3">
           <div class="logo__block">
@@ -66,10 +69,18 @@
             info@acnesk.ru</p>
         </div>
 
-        <div class="col-2">
-          <a class="button__zayavka" href="#popup1">
-            Оставить заявку</a>
+        <div class="col">
+          <button class="button__zayavka">
+            <a href="#popup1">
+              Оставить заявку</a>
+          </button>
+          <button class="button__system__edo float-right">
+            <a href="#">
+              <img src="img/enter.png" class="enter__icon__edo" alt="">
+              Войти в систему ЭДО</a>
+          </button>
         </div>
+
         <div class="box__feedback">
           <div id="popup1" class="overlay">
             <div class="container">
@@ -106,11 +117,11 @@
   <!-- Меню -->
   <div class="bg-menu">
     <div class="container ">
-      <div class="row align-items-center">
+      <div class="row">
         <div class="col-7">
           <nav>
             <ul class="menu d-flex">
-              <li class="menu-item">
+              <li class="menu__item">
                 <a href="#">Главная</a>
               </li>
 
@@ -180,9 +191,9 @@
             </ul>
           </nav>
         </div>
-        <div class="col-5">
-
-          <div class="search__block text-right">
+        <div class="col">
+          
+          <div class="search__block ">
             <form>
               <input type="text" placeholder="Поиск по сайту">
               <button type="submit" class="sumbit__search">
@@ -190,6 +201,7 @@
               </button>
             </form>
           </div>
+
         </div>
       </div>
     </div>
@@ -205,39 +217,31 @@
 
           <div class="row">
             <div class="col-6">
-              <div class="sasp-logo">
+              <div class="sasp__logo">
                 <img src="img/SASP.png" alt="">
-                <div class="tooltip-main">
-                  <div class="sasp-logo-info">
-                    <p>САСП<br> Система аттестации <br> сварочного производства
-                    </p>
-                    <p class="site-sasp">
-                      <a href="#" class="site-sasp">www.naks.ru</a>
-                    </p>
-                  </div>
-                </div>
               </div>
 
-
-              <div class="text-cok">
+              <div class="about__organization__text">
                 <p>Западно-сибирский <br>
                   <strong>центр оценки квалификаций</strong></p>
               </div>
 
-              <div class="text2">
+              <div class="about__organization__text__two">
                 <p><strong>20 лет</strong> мы осуществляем весь комплекс работ в сфере аттестации <br> сварочного
                   производства, и промышленной безопасности на опасных <br> производственных объектах подведомственных
                   Ростехнадзору
                 </p>
               </div>
 
-              <div class="button-zayavka-online">
-                <a href="#" class="button-zayavka">Подать заявку на аттестацию</a>
+              <div class="button__zayavka__online">
+                <a href="#" class="button__zayavka__text">
+                  Подать заявку на аттестацию</a>
               </div>
+
             </div>
 
             <div class="col-6">
-              <div class="info__p">
+              <div class="head__information">
                 <p class="text-right">Информация</p>
               </div>
 
@@ -314,7 +318,7 @@
 
       <!-- services block 1 -->
 
-      <div class="box__uslug ">
+      <div class="box__uslug animated ">
         <div class="row d-flex">
           <div class="col">
             <div class="block__uslug__one">
@@ -724,21 +728,23 @@
     <div class="container">
       <div class="row">
         <div class="col-4">
-          <div class="ask__box ">
-            <div class="ask__text__header">
-              <p class="ask__text">
-                Возникли вопросы?
-                <a href="#" class="ask__button__text">
-                  Задать вопрос
-                </a>
+          <div class="ask__box">
+            <div class="col">
+              <div class="ask__text__header">
+                <p class="ask__text">
+                  Возникли вопросы?
+                </p>
+
+              </div>
+            </div>
+            <div class="col">
+              <p class="ask__text__small">
+                Воспользуйтесь формой <br>
+                <strong>«Задать вопрос»</strong> <br>
+                и наш специалист ответит вам <br>
+                в ближайшее время
               </p>
             </div>
-            <p class="ask__text__small">
-              Воспользуйтесь формой <br>
-              <strong>«Задать вопрос»</strong> <br>
-              и наш специалист ответит вам <br>
-              в ближайшее время
-            </p>
           </div>
         </div>
 
@@ -872,9 +878,6 @@
               <li>Выписка из реестра САСв</li>
             </a>
           </ul>
-          <div class="subscription__form">
-            <p>Подписка на центр</p>
-          </div>
         </div>
         <div class="col-3">
           <div class="footer__number text-right">
@@ -905,7 +908,7 @@
 
   <div class="basement__footer">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-3">
           <p class="basement__text">
             ООО «НЭКС» © 2004-2018 &nbsp; | &nbsp; Все права защищены
@@ -916,11 +919,11 @@
             Политика конфиденциальности
           </a>
         </div>
-
-        <div class="col-3 text-right">
-          <div class="razrabotano__basement__footer">
-            <a href="#" class="razrabotano__v__naks__media">Разработано в - НАКС Медиа</a>
-            <!-- <img src="img/naks__media__logo .png" class="naks__media__logo" alt=""> -->
+        <div class="col">
+          <div class="razrabotano__basement__footer text-right">
+            <a href="#" class="razrabotano__v__naks__media">
+              Разработано в - НАКС Медиа</a>
+            <img src="img/naks__media__logo .png" class="naks__media__logo" alt="">
           </div>
         </div>
       </div>
