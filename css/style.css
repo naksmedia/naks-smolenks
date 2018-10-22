@@ -251,7 +251,6 @@ background-color: #4b505c;
 .search__block form {
 position: relative;
 margin: 0 auto;
-/* height: 42px; */
 }
 
 .search__block input {
@@ -262,32 +261,21 @@ border-bottom: 1px solid transparent;
 outline: none;
 background: transparent;
 transition: 0.2s;
-/* position: absolute;
-top: 0;
-right: 0; */
 z-index: 2;
 color: #fff;
 }
 
+
 .search__block input:focus  {
 width: 45%;
 z-index: 1;
-margin-left: 15px;
 border-bottom: 1px solid rgb(255, 255, 255);
-margin-right: 50px;
 }
 
-.sumbit__search:focus {
-	
-}
-
-
-.sumbit__search {
+.submit__search {
 background: transparent;
 border: none;
-/* position: absolute; */
 cursor: pointer;
-/* right: 0; */
 }
 
 
@@ -842,6 +830,8 @@ background: linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 
 font-size: 18px;
 color: #fff;
 }
+
+
 
 .button__search__work{
 background-color: #ffdc4e;
