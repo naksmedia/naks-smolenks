@@ -92,11 +92,54 @@
  
 <!-- ========== Модальное окно - оставить заявку  ========== -->
 <div id="modal-window">
-   <span class="modal-close">&#10006;</span>
+   <span class="modal-close"></span>
    <div class="align-content">
-      <div class="content">
-         <h3><b>Some header</b></h3>
-         <p>And some text here</p>
+      <div class="content__feedback">
+          <button class="button__back__to__main">
+              <a href="#" id="#">
+                <img src="img/arrow__next-02.png" class="arrow__next__four" alt="">
+                На главную</a>
+            </button>
+            <div class="row">
+        <div class="col-5">
+            <div class="content__text">
+           <h3>Оставить заявку на АТТЕСТАЦИЮ</h3>
+         <p>Выберите вид аттестации, введите свои <br>
+          контактные данные, и наш специалист <br>
+          свяжется с вами в ближайшее время</p>
+        </div>
+        </div>
+        <div class="col">      
+        <div class="form__to__submit__application">
+            <form>
+                <input name="name" type="text" class="feedback-input" placeholder="Имя" />             
+                             
+                <input name="number" type="text" class="feedback-input" placeholder="Номер телефона" />
+                <div class="choose__text">
+                  <p>Выбрать вид аттестации:</p>
+                </div>
+                <div class="line__two"></div> 
+                <div class="choose__item">
+                    <ul class="items">
+                        <li data-selected="0" data-guid="1">Аттестация сварщика</li>
+                        <li data-selected="0" data-guid="2">Аттестация специалистов сварочного производства</li>
+                        <li data-selected="0" data-guid="3">Аттестация сварочного оборудования</li>
+                        <li data-selected="0" data-guid="4">Аттестация технологий сварки (наплавки)</li>                        
+                      </ul> 
+                </div>
+                <!-- <div class="form__i_gree">
+                    <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"/>
+                  я даю <a href="#">согласие на обработку персональных данных.</a>
+                </div> -->
+                <div class="button">
+                <input type="submit" name="submit" disabled="" value="Отправить заявку" />
+               
+              </div>
+            </div>
+              </form>
+              
+        </div>   
+        </div>                      
       </div>
    </div>
 </div>
