@@ -1,0 +1,22 @@
+@import "_legacy.scss";
+@import "_header.scss";
+
+.header__logo__center {
+    
+}
+
+.logo__block {
+    @media screen and (max-width: 576px) {
+        padding: 15px 0px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
+
+.header__buttons-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
