@@ -1,11 +1,13 @@
 @import "_legacy.scss";
 @import "_header.scss";
+@import "_burger__menu.scss";
 
-.header__logo__center {
-    
-}
 
 .logo__block {
+    @media screen and (max-width: 1200px) {
+        justify-content: space-between;
+    }
+
     @media screen and (max-width: 576px) {
         padding: 15px 0px;
         display: flex;
@@ -19,4 +21,9 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 1500px) {
+        margin: 0px;
+    }
 }
+
+
