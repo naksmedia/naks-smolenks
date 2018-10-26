@@ -64,3 +64,23 @@ function check() {
     else
     submit.disabled = 'disabled';
     }
+
+    $('#box').click(function(){
+      $('.drop__menu').hide(); // Скрывает начальное содержимое.
+      $('.drop__menu').show(); // Показывает содержимое диалога.
+  });
+
+  $(document).ready(function () {
+    $(".sb-icon-search").click(function () {
+      if (!$(".sb-search").hasClass("sb-search-open")) {
+        $(".sb-search").addClass("sb-search-open");
+      }
+    });
+    
+    $(".sb-search-submit").click(function(){
+      if ($(".sb-search").hasClass("sb-search-open") && $.trim($(".sb-search-input").val()).length==0) {
+        event.preventDefault();
+        $(".sb-search").removeClass("sb-search-open");
+      }
+    });
+  });

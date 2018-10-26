@@ -38,6 +38,10 @@
   <div w3-include-html="includes/modal__window.html"></div>
   <!-- End Include MODAL WINDOW -->
 
+  <!-- Include BURGER MENU -->
+  <div w3-include-html="includes/burger__menu.html"></div>
+  <!-- End Include BURGER MENU  -->
+
   <!-- Меню -->
   <div class="menu__background">
     <div class="container ">
@@ -140,20 +144,20 @@
         </div>
         <div class="col text-right">
 
-          <div class="search__form align-items-center">
-            <input type="text" placeholder="Поиск по сайту" class="search" />
-            <div class="btn">
-              <img src="img/icon__search.png" title="Поиск" alt="">
-            </div>
-          </div>
+            <div id="sb-search" class="sb-search">
+                <form>
+                  <input type="search" class="sb-search-input" placeholder="Поиск по сайту" value="" name="search" id="search" />
+                  <input type="submit" class="sb-search-submit" value="" />
+                  <span class="sb-icon-search entypo-search" title="Поиск">
+                    <img src="img/icon__search.png" alt="">
+                  </span>
+                </form>
+              </div>
 
         </div>
       </div>
     </div>
-  </div>
-  <!-- Include BURGER MENU -->
-  <div w3-include-html="includes/burger__menu.html"></div>
-  <!-- End Include BURGER MENU  -->
+  </div>  
   <!-- Конец меню -->
 
   <!-- Include CONTENT -->

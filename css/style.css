@@ -136,7 +136,7 @@ ul.menu {
 .menu a {
   color: #fff;
   text-decoration: none; }
-  @media screen and (max-width: 1320px) {
+  @media screen and (max-width: 1200px) {
     .menu a {
       display: none; } }
 
@@ -177,40 +177,82 @@ ul.menu {
 .menu__background {
   background-color: #4b505c; }
 
-/* Форма поиска */
-.search {
-  background: none;
+.sb-search {
   position: relative;
   width: 0%;
-  transition: 0.55s;
+  min-width: 60px;
+  height: 60px;
+  float: right;
+  overflow: hidden;
+  -webkit-transition: width 0.3s;
+  -mos-transition: width 0.3s;
+  transition: width 0.3s;
+  -webkit-backface-visibility: hidden; }
+
+.sb-search-input {
+  position: absolute;
+  top: 0;
+  right: 0;
   border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  z-index: 10;
+  padding: 20px 65px 20px 20px;
+  font-family: sans-serif;
+  font-size: 14px;
   color: #fff; }
 
-.search__form input[type="text"]::-webkit-input-placeholder {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 150; }
+input[type="search"].sb-search-input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px; }
 
-.btn {
+.sb-search-input::-webkit-input-placeholder {
+  color: #fff; }
+
+.sb-icon-search,
+.sb-search-submit {
+  width: 60px;
+  height: 60px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
   padding: 0;
   margin: 0;
-  top: 0; }
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer; }
 
-.open {
-  width: 40%;
-  outline: none;
+.sb-search-submit {
+  background: #fff;
+  /*IE needs this*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 8 */
+  filter: alpha(opacity=0);
+  /*IE 5-7*/
+  opacity: 0;
+  color: transparent;
   border: none;
-  background-color: transparent;
-  border-bottom: 1px #fff solid;
-  margin-right: 15px; }
+  outline: none;
+  z-index: -1; }
 
-.movement {
-  -webkit-animation: searchAnimation 0.55s ease-out;
-  -moz-animation: searchAnimation 0.55s ease-out;
-  -o-animation: searchAnimation 0.55s ease-out;
-  animation: searchAnimation 0.55s ease-out; }
+.sb-icon-search {
+  z-index: 90;
+  -webkit-font-smoothing: antialiased; }
 
-/* end форма поиска */
+.sb-search.sb-search-open {
+  width: 80%; }
+
+.sb-search.sb-search-open .sb-icon-search {
+  color: #fff;
+  z-index: 11; }
+
+.sb-search.sb-search-open .sb-search-submit {
+  z-index: 90; }
+
 /*--------------------- Фон + информация ---------------------*/
 .sasp__logo {
   margin-bottom: 25px; }
@@ -235,16 +277,22 @@ ul.menu {
   font-size: 30px;
   text-transform: uppercase;
   margin-bottom: 30px; }
+  @media screen and (max-width: 1600px) {
+    .about__organization__text {
+      font-size: 24px; } }
 
 .about__organization__text__two {
   font-size: 20px;
   margin-bottom: 35px; }
+  @media screen and (max-width: 1600px) {
+    .about__organization__text__two {
+      font-size: 16px; } }
 
 .button__zayavka__online {
   background-color: #ff5d5d;
   border-radius: 3px;
   text-align: center;
-  line-height: 55px;
+  padding: 15px;
   width: 45%; }
 
 .button__zayavka__online:hover {
@@ -274,7 +322,6 @@ ul.menu {
 
 .prof__standart {
   width: 49%;
-  height: 23%;
   background-color: #fff;
   border-radius: 3px;
   margin-bottom: 35px; }
@@ -288,7 +335,6 @@ ul.menu {
 
 .oblast__deatelnosti {
   width: 49%;
-  height: 23%;
   background-color: #fff;
   border-radius: 3px;
   margin-bottom: 30px; }
@@ -312,6 +358,10 @@ ul.menu {
   font-size: 22px;
   font-weight: 450;
   margin-bottom: 15px; }
+
+@media screen and (max-width: 1600px) {
+  .text__block__one p {
+    font-size: 14px; } }
 
 .attestat-svarshik {
   font-size: 16px;
@@ -815,6 +865,101 @@ ul.menu {
   background-color: rgba(255, 255, 255, 0.3);
   color: #fff; }
 
+.burger__menu {
+  display: none; }
+  @media screen and (max-width: 1200px) {
+    .burger__menu {
+      display: block; } }
+
+input + label {
+  position: absolute;
+  height: 20px;
+  width: 35px;
+  z-index: 100000;
+  margin: 15px; }
+
+input + label span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 50%;
+  display: block;
+  background: #ffffff;
+  transition: .2s; }
+
+input + label span:first-child {
+  top: 3px; }
+
+input + label span:last-child {
+  top: 16px; }
+
+label:hover {
+  cursor: pointer; }
+
+input:checked + label span {
+  opacity: 0;
+  top: 50%; }
+
+input:checked + label span:first-child {
+  opacity: 1;
+  transform: rotate(405deg); }
+
+input:checked + label span:last-child {
+  opacity: 1;
+  transform: rotate(-405deg); }
+
+input ~ nav {
+  background: #4b505c;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  transition: .5s;
+  transition-delay: .5s;
+  overflow: hidden; }
+
+input ~ nav > ul {
+  position: absolute;
+  padding: 55px; }
+
+input ~ nav > ul > li {
+  opacity: 0;
+  transition: .5s;
+  transition-delay: 0s;
+  list-style-type: none; }
+
+input ~ nav > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  display: block;
+  padding: 15px; }
+
+input ~ nav > ul > li > a:hover {
+  color: grey; }
+
+input:checked ~ nav {
+  height: 100%;
+  transition-delay: 0s; }
+
+input:checked ~ nav > ul > li {
+  opacity: 1;
+  transition-delay: .2s; }
+
+.menu__burger__list ul {
+  display: none;
+  margin: 0;
+  z-index: 1000; }
+
+.menu__burger__list li {
+  list-style-type: none;
+  padding: 10px;
+  font-size: 14px; }
+
+.drop__menu a {
+  color: #fff; }
+
 /* modal window */
 .modal-window {
   margin: 0 auto; }
@@ -1010,95 +1155,6 @@ hr {
 
 .form__to__submit__application input[type="submit"]:active {
   background: #2892c7; }
-
-.mobile__menu__burger {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 16px;
-  top: 0;
-  background-color: transparent;
-  left: 0;
-  right: 0;
-  height: 50px;
-  z-index: 9999999; }
-  @media screen and (min-width: 1320px) {
-    .mobile__menu__burger {
-      display: none; } }
-  .mobile__menu__burger__btn {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 30px;
-    cursor: pointer;
-    transition: .4s; }
-  .mobile__menu__burger__icon {
-    display: block;
-    position: relative;
-    background: white;
-    width: 90%;
-    height: 4px;
-    transition: .4s; }
-    .mobile__menu__burger__icon::after, .mobile__menu__burger__icon::before {
-      content: "";
-      display: block;
-      position: absolute;
-      background: white;
-      width: 100%;
-      height: 4px;
-      transition: .4s; }
-    .mobile__menu__burger__icon::after {
-      top: 8px; }
-    .mobile__menu__burger__icon::before {
-      top: -8px; }
-  .mobile__menu__burger__container {
-    position: fixed;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 50px;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    height: 0;
-    opacity: 1;
-    transition: .5s;
-    transition-delay: .2s;
-    overflow: hidden;
-    background-color: transparent; }
-  .mobile__menu__burger__list {
-    transition: .5s;
-    transition-delay: .5s;
-    list-style: none;
-    padding-left: 0;
-    margin-top: -50px; }
-  .mobile__menu__burger__item {
-    font-size: 26px;
-    padding-bottom: 15px; }
-  .mobile__menu__burger__link {
-    text-decoration: none;
-    color: #fff; }
-  .mobile__menu__burger__checkbox {
-    display: none; }
-    .mobile__menu__burger__checkbox:checked ~ .mobile__menu__burger__nav {
-      opacity: 1;
-      transition-delay: 0s; }
-    .mobile__menu__burger__checkbox:checked ~ .mobile__menu__burger__container {
-      height: 100%;
-      transition-delay: 0s; }
-    .mobile__menu__burger__checkbox:checked ~ .mobile__menu__burger__btn .mobile-menu__icon {
-      background: transparent; }
-      .mobile__menu__burger__checkbox:checked ~ .mobile__menu__burger__btn .mobile-menu__icon::before, .mobile__menu__burger__checkbox:checked ~ .mobile__menu__burger__btn .mobile-menu__icon::after {
-        top: 0; }
-      .mobile__menu__burger__checkbox:checked ~ .mobile__menu__burger__btn .mobile-menu__icon::after {
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg); }
-      .mobile__menu__burger__checkbox:checked ~ .mobile__menu__burger__btn .mobile-menu__icon::before {
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg); }
 
 @media screen and (max-width: 1200px) {
   .logo__block {
