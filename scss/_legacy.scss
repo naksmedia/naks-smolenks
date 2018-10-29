@@ -348,14 +348,17 @@ input[type="search"].sb-search-input {
     margin-bottom: 30px;
     @media screen and (max-width: 1600px) {
         font-size: 24px;
-    }
+    }    
 }
 
 .about__organization__text__two {
     font-size: 20px;
     margin-bottom: 35px;
     @media screen and (max-width: 1600px) {
-        font-size: 16px;
+        font-size: 14px;
+    }   
+    @media screen and (max-width: 1180px) {
+        font-size: 12px;
     }
 }
 
@@ -365,6 +368,9 @@ input[type="search"].sb-search-input {
     text-align: center;
     padding: 15px;
     width: 45%;
+    @media screen and (max-width: 1600px) {
+        width: 100%;
+    }
 }
 
 .button__zayavka__online:hover {
@@ -411,13 +417,16 @@ input[type="search"].sb-search-input {
     padding: 20px 35px;
     text-decoration: none;
     display: block;
+    @media screen and (max-width: 1125px) {
+        font-size: 16px;
+    }
 }
 
 .oblast__deatelnosti {
     width: 49%;    
     background-color: #fff;
     border-radius: 3px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;   
 }
 
 .obl__text a {
@@ -426,6 +435,9 @@ input[type="search"].sb-search-input {
     padding: 20px 35px;
     text-decoration: none;
     display: block;
+    @media screen and (max-width: 1125px) {
+        font-size: 16px;
+    }
 }
 
 .pf__text:hover {
@@ -442,18 +454,20 @@ input[type="search"].sb-search-input {
     font-size: 22px;
     font-weight: 450;
     margin-bottom: 15px;
-}
-
-.text__block__one p{
     @media screen and (max-width: 1600px) {
-        font-size: 14px;
+        margin-bottom: 0;
     }
 }
+
+
 
 .attestat-svarshik {
     font-size: 16px;
     font-weight: 100;
     margin-bottom: 10px;
+    @media screen and (max-width: 1600px) {
+        font-size: 12px;
+    }
 }
 
 .d-line {
@@ -468,12 +482,18 @@ input[type="search"].sb-search-input {
     font-weight: 650;
     color: #ff5d5d;
     margin-bottom: 17px;
+    @media screen and (max-width: 1600px) {
+        font-size: 16px;
+    }
 }
 
 .button__uslugi {
     border: 1px solid #fff;
     border-radius: 3px;
     width: 35%;    
+        @media screen and (max-width: 1600px) {
+            width: 100%;
+        }   
 }
 
 
@@ -832,11 +852,18 @@ input[type="search"].sb-search-input {
 
 .ask__button__text {
     border: 1px #fff solid;
-    border-radius: 3px;
-    padding: 8px 20px 12px;
+    border-radius: 3px;    
     color: #fff;
     font-size: 16px;
     float: right;
+    background: transparent;
+}
+
+.ask__button__text a{
+    display: block;
+    color: #ffffff;
+    padding: 10px;
+    white-space: nowrap;
 }
 
 .ask__button__text:hover {
@@ -873,10 +900,16 @@ input[type="search"].sb-search-input {
 .button__search__work {
     background-color: #ffdc4e;
     border-radius: 3px;
-    padding: 8px 20px 12px;
+    border: none;         
+    float: right;
+}
+.button__search__work a{
+    display: block;
+    color: #ffffff;
+    padding: 10px;
+    white-space: nowrap;
     color: #000;
     font-size: 16px;
-    float: right;
 }
 
 .adress__site_bw {
@@ -1071,20 +1104,41 @@ input[type="search"].sb-search-input {
     text-decoration: underline;
 }
 
-.footer__button__text {
-    color: #fff;
-    border: 1px #fff solid;
+
+.button__zayavka__footer {
+    color: #ffffff;
+    border: 1px #ffffff solid;
     border-radius: 3px;
-    padding: 12px 25px;
     font-size: 14px;
+    font-weight: 500;
+    background: transparent;
+    padding: 0px 15px;
+    @media screen and (max-width : 1535px) {
+        flex: 1 1;
+        margin: 0px 0px 10px;        
+    }
+    @media screen and (max-width : 1200px) {
+        flex: 1 1;
+        margin: 0px;
+        margin-right: 15px;
+           } 
+      
 }
 
-.footer__button__text:hover {
+.button__zayavka__footer a {
+    display: block;
+    // padding: 12px 10px;
+    color: #ffffff;
+    line-height: 44px;
+    white-space: nowrap;
+}
+
+.button__zayavka__footer:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
 }
 
-.footer__button__text:active {
+.button__zayavka__footer:active {
     background-color: rgba(255, 255, 255, 0.3);
     color: #fff;
 }

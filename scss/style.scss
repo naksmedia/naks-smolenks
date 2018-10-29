@@ -17,14 +17,48 @@
     }
 }
 
+
 .header__buttons-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+
     @media screen and (max-width: 1500px) {
         margin: 0px;
+
+        @media screen and (max-width: 1199px) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 
 
+.logo__block {
+    @media screen and (max-width: 1300px) {
+        display: none;    
+    }
+}
+
+
+.logo__block {
+    @media screen and (max-width: 995px) {
+        display: block;    
+    }
+}
+
+
+.logo__block {
+    @media screen and (max-width: 995px) {
+        display: flex;    
+    }
+}
+
+.block__obl__proff{
+    @media screen and (max-width: 1055px) {
+        display: inline;
+        flex-flow: row wrap;
+        justify-content: space-between;    
+    }
+}

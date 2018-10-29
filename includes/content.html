@@ -29,11 +29,11 @@
 
             </div>
 
-            <div class="col-6">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
               <div class="head__information">
                 <p class="text-right">Информация</p>
               </div>
-
+              <div class="block__obl__proff">
               <div class="oblast__deatelnosti float-right">
                 <p class="pf__text text-left">
                   <a href="#" class="pf__arrow__1">Область <br> деятельности</a>
@@ -45,6 +45,7 @@
                   <a href="#" class="pf__arrow__2">Профстандарты <br> в области сварки</a>
                 </p>
               </div>
+            </div>
 
               <div class="center-text text-left">
                 В нашем Центре:
@@ -52,7 +53,7 @@
 
               <div class="row">
                 <div class="col-2">
-                  <div class="text__block__one">
+                 
                     <p class="attestat-svarshik text-left">
                       Аттестовано <br> сварщиков
                       </p>
@@ -61,7 +62,7 @@
                     <div class="number-kolvo text-left">
                       1150
                     </div>
-                  </div>
+                  
                 </div>
 
                 <div class="col-2">
@@ -318,7 +319,7 @@
       </div>
     </div>
   </div>
-
+  
   <div class="news__block__two">
     <div class="container">
       <div class="row">
@@ -509,8 +510,7 @@
       </div>
     </div>
   </div>
-
-  <!-- end info block -->
+  <!-- end articles block -->
 
 
   <!-- info block -->
@@ -523,9 +523,10 @@
               <div class="ask__text__header">
                 <p class="ask__text">
                   Возникли вопросы?
-                  <a href="#" class="ask__button__text">
-                    Задать вопрос
-                  </a>
+                  <button class="ask__button__text">
+                    <a href="#" data-toggle="modal" data-target="#modal-question">
+                      Задать вопрос</a>
+                  </button>
                 </p>
 
               </div>
@@ -548,9 +549,10 @@
                 <div class="ask__text__header">
                   <p class="search__text__header">
                     Поиска работы
-                    <a href="#" class="button__search__work">
-                      Найти работу
-                    </a>
+                    <button class="button__search__work">
+                      <a href="#" >
+                        Найти работу</a>
+                    </button>
                   </p>
                   <p class="search__text__header__two">
                     в области сварки
