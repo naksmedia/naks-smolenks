@@ -52,7 +52,7 @@ border: 1px red solid;
 
 /*--------------------- Хедр 2 ---------------------*/
 .header__block__two {
-  padding: 35px; }
+  padding: 35px 0px 35px 0px; }
   @media screen and (max-width: 576px) {
     .header__block__two {
       padding: 35px 0px 35px 20px; } }
@@ -255,23 +255,36 @@ input[type="search"].sb-search-input {
 
 /*--------------------- Фон + информация ---------------------*/
 .sasp__logo {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  font-size: 16px; }
+  @media screen and (max-width: 480px) {
+    .sasp__logo {
+      width: 300px;
+      height: 65px; } }
+  @media screen and (max-width: 768px) {
+    .sasp__logo {
+      width: 300px;
+      height: 65px; } }
+
+.sasp__text {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  float: right; }
 
 .bg-block-01 {
   background: url(../img/background.png) no-repeat;
-  background-size: cover;
-  color: #fff;
-  width: 100%; }
+  width: 100%;
+  background-size: cover; }
 
 .bg {
   background: url(../img/gradient.png) no-repeat;
   background-size: cover;
   color: #fff;
-  width: 100%;
-  height: 585px; }
+  width: 100%; }
 
 .blog-info {
-  padding: 85px; }
+  padding: 60px 0px 60px 0px; }
 
 .about__organization__text {
   font-size: 30px;
@@ -280,10 +293,13 @@ input[type="search"].sb-search-input {
   @media screen and (max-width: 1600px) {
     .about__organization__text {
       font-size: 24px; } }
+  @media screen and (max-width: 768px) {
+    .about__organization__text {
+      font-size: 16px; } }
 
 .about__organization__text__two {
   font-size: 20px;
-  margin-bottom: 35px; }
+  margin-bottom: 30px; }
   @media screen and (max-width: 1600px) {
     .about__organization__text__two {
       font-size: 14px; } }
@@ -295,11 +311,19 @@ input[type="search"].sb-search-input {
   background-color: #ff5d5d;
   border-radius: 3px;
   text-align: center;
-  padding: 15px;
+  border: none;
+  display: block;
   width: 45%; }
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1400px) {
     .button__zayavka__online {
       width: 100%; } }
+  @media screen and (max-width: 768px) {
+    .button__zayavka__online {
+      width: 100%; } }
+
+.button__zayavka__online a {
+  display: block;
+  padding: 15px; }
 
 .button__zayavka__online:hover {
   background-color: #e63838;
@@ -392,7 +416,7 @@ input[type="search"].sb-search-input {
   font-size: 28px;
   font-weight: 650;
   color: #ff5d5d;
-  margin-bottom: 17px; }
+  margin-bottom: 12px; }
   @media screen and (max-width: 1600px) {
     .number-kolvo {
       font-size: 16px; } }
@@ -427,7 +451,7 @@ input[type="search"].sb-search-input {
 /*--------------------- Блок 1 ---------------------*/
 .block__uslugi {
   background-color: #fbfbfb;
-  padding: 50px;
+  padding: 75px 0px 55px 0px;
   max-width: 100%; }
 
 .content__header__uslugi {
@@ -464,8 +488,7 @@ input[type="search"].sb-search-input {
 .news__header {
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 35px;
-  margin-top: 35px; }
+  padding: 35px 0px 35px 0px; }
 
 .all__news__button {
   font-size: 16px;
@@ -496,6 +519,10 @@ input[type="search"].sb-search-input {
   width: 80%;
   padding: 35px;
   opacity: 0; }
+  @media screen and (max-width: 992px) {
+    .die__for__text {
+      opacity: 1;
+      width: 100%; } }
 
 .block__img__news {
   background: url(../img/news__photo.png) no-repeat;
@@ -509,6 +536,11 @@ input[type="search"].sb-search-input {
   border-radius: 3px;
   width: 100%;
   height: 402px; }
+  @media screen and (max-width: 768px) {
+    .block__news__box {
+      opacity: 1;
+      width: 100%;
+      margin-bottom: 15px; } }
 
 .block__news__box:hover .die__for__text {
   opacity: 1;
@@ -526,6 +558,10 @@ input[type="search"].sb-search-input {
   width: 30%;
   padding: 35px;
   opacity: 0; }
+  @media screen and (max-width: 992px) {
+    .die__for__text__two {
+      opacity: 1;
+      width: 100%; } }
 
 .block__news__box__two {
   background-color: rgba(104, 104, 104, 0.4);
@@ -562,6 +598,12 @@ input[type="search"].sb-search-input {
   border-radius: 3px;
   padding: 35px;
   max-width: 100%; }
+  @media screen and (max-width: 768px) {
+    .block__agreements {
+      margin-bottom: 25px; } }
+  @media screen and (max-width: 1200px) {
+    .block__agreements {
+      margin-bottom: 25px; } }
 
 .block__agreements:hover {
   background-color: #f5f5f5;
@@ -666,7 +708,8 @@ input[type="search"].sb-search-input {
   background: #214fa5;
   background: -webkit-linear-gradient(bottom right, #214fa5, #3aa0da);
   background: -moz-linear-gradient(bottom right, #214fa5, #3aa0da);
-  background: linear-gradient(bottom right, #214fa5, #3aa0da); }
+  background: linear-gradient(bottom right, #214fa5, #3aa0da);
+  margin-bottom: 35px; }
 
 .ask__box:hover {
   transform: scale(1.02, 1.02);
@@ -704,7 +747,8 @@ input[type="search"].sb-search-input {
   background: #214fa5;
   background: -webkit-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
   background: -moz-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
-  background: linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7)); }
+  background: linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
+  margin-bottom: 35px; }
 
 .search__text__header {
   font-size: 22px;
@@ -764,7 +808,8 @@ input[type="search"].sb-search-input {
   background: #214fa5;
   background: -webkit-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
   background: -moz-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
-  background: linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7)); }
+  background: linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
+  margin-bottom: 35px; }
 
 .journal__box__img {
   background: url(../img/journal__img.png) no-repeat;
@@ -821,14 +866,16 @@ input[type="search"].sb-search-input {
   margin-bottom: 50px; }
 
 .menu__footer {
-  padding: 55px 0px 0px 0px;
-  margin-bottom: 60px; }
+  padding: 55px 0px 0px 0px; }
 
 .menu__footer li {
   color: #fff;
   font-size: 14px;
   font-weight: 400;
   padding: 0px 15px; }
+  @media screen and (max-width: 1340px) {
+    .menu__footer li {
+      display: none; } }
 
 .menu__footer li:hover {
   color: #e0e0e0; }
@@ -890,15 +937,6 @@ input[type="search"].sb-search-input {
   font-weight: 500;
   background: transparent;
   padding: 0px 15px; }
-  @media screen and (max-width: 1535px) {
-    .button__zayavka__footer {
-      flex: 1 1;
-      margin: 0px 0px 10px; } }
-  @media screen and (max-width: 1200px) {
-    .button__zayavka__footer {
-      flex: 1 1;
-      margin: 0px;
-      margin-right: 15px; } }
 
 .button__zayavka__footer a {
   display: block;
@@ -1076,7 +1114,9 @@ input:checked ~ nav > ul > li {
 
 input ~ label[for="soglasie"] {
   width: 100%;
-  font-size: 16px; }
+  font-size: 16px;
+  margin: 10px 0px 0px 10px;
+  padding: 0px; }
 
 .button__to__send_zayavka__formmodal {
   background-color: #5ba4dd;
@@ -1113,10 +1153,6 @@ input ~ label[for="soglasie"] {
   @media screen and (max-width: 1500px) {
     .header__buttons-container {
       margin: 0px; } }
-  @media screen and (max-width: 1500px) and (max-width: 1199px) {
-    .header__buttons-container {
-      display: flex;
-      justify-content: space-between; } }
 
 @media screen and (max-width: 1300px) {
   .logo__block {
@@ -1135,3 +1171,11 @@ input ~ label[for="soglasie"] {
     display: inline;
     flex-flow: row wrap;
     justify-content: space-between; } }
+
+@media screen and (max-width: 480px) {
+  .info__number__atestat__block {
+    display: none; } }
+
+@media screen and (max-width: 480px) {
+  .info__text__right {
+    display: none; } }

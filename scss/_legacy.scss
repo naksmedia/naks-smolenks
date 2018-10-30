@@ -38,8 +38,9 @@ border: 1px red solid;
 .head__text__adres {
     color: #89929d;
     font-weight: 550;
-    @media screen and (max-width : 576px) {
-         text-align: center;
+
+    @media screen and (max-width: 576px) {
+        text-align: center;
     }
 }
 
@@ -48,8 +49,9 @@ border: 1px red solid;
     font-size: 14px;
     font-weight: 500;
     text-align: right;
-    @media screen and (max-width : 576px) {
-            text-align: center;
+
+    @media screen and (max-width: 576px) {
+        text-align: center;
     }
 }
 
@@ -70,24 +72,26 @@ border: 1px red solid;
 
 
 .header__block__two {
-    padding: 35px;
-    @media screen and (max-width : 576px) {
-         padding: 35px 0px 35px 20px;
+    padding: 35px 0px 35px 0px;
+
+    @media screen and (max-width: 576px) {
+        padding: 35px 0px 35px 20px;
     }
 }
 
 .logo__block img {
     padding: 15px 15px 15px 0px;
-    
+
 }
 
 .header__number {
     font-size: 24px;
     color: #000;
     font-weight: 550;
-    @media screen and (max-width : 1510px) {
+
+    @media screen and (max-width: 1510px) {
         font-size: 18px;
-   }
+    }
 }
 
 .header__mail {
@@ -104,16 +108,18 @@ border: 1px red solid;
     font-weight: 500;
     background: transparent;
     padding: 0px 15px;
-    @media screen and (max-width : 1535px) {
+
+    @media screen and (max-width: 1535px) {
         flex: 1 1;
-        margin: 0px 0px 10px;        
+        margin: 0px 0px 10px;
     }
+
     @media screen and (max-width : 1200px) {
         flex: 1 1;
         margin: 0px;
         margin-right: 15px;
-           } 
-      
+    }
+
 }
 
 .button__zayavka a {
@@ -135,14 +141,15 @@ border: 1px red solid;
     font-weight: 500;
     background-color: #5ba4dd;
     padding: 0 15px;
-    @media screen and (max-width : 1535px) {
-        flex: 1 1; 
-    }  
-      
+
+    @media screen and (max-width: 1535px) {
+        flex: 1 1;
+    }
+
 }
 
 .button__system__edo a {
-    display: block;    
+    display: block;
     color: #fff;
     white-space: nowrap;
     line-height: 44px;
@@ -169,13 +176,14 @@ ul.menu {
     font-size: 16px;
     justify-content: space-between;
     list-style: none;
-    display: block; 
-  }
+    display: block;
+}
 
 
 .menu a {
     color: #fff;
     text-decoration: none;
+
     @media screen and (max-width: 1200px) {
         display: none;
     }
@@ -230,88 +238,91 @@ ul.menu {
 // Форма поиска
 
 .sb-search {
-  position: relative;
-  width: 0%;
-  min-width: 60px;
-  height: 60px;
-  float: right;
-  overflow: hidden;
-  
-  -webkit-transition: width 0.3s;
-     -mos-transition: width 0.3s;
-          transition: width 0.3s;
-  
-  -webkit-backface-visibility: hidden;
+    position: relative;
+    width: 0%;
+    min-width: 60px;
+    height: 60px;
+    float: right;
+    overflow: hidden;
+
+    -webkit-transition: width 0.3s;
+    -mos-transition: width 0.3s;
+    transition: width 0.3s;
+
+    -webkit-backface-visibility: hidden;
 }
 
 .sb-search-input {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-  outline: none;
-  background: transparent;
-  width: 100%;
-  height: 60px;
-  margin: 0;
-  z-index: 10;
-  padding: 20px 65px 20px 20px;
-  font-family: sans-serif;
-  font-size: 14px;
-  color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    z-index: 10;
+    padding: 20px 65px 20px 20px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #fff;
 }
 
 input[type="search"].sb-search-input {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
 }
 
 .sb-search-input::-webkit-input-placeholder {
-  color: #fff;
+    color: #fff;
 }
 
 .sb-icon-search,
 .sb-search-submit {
-  width: 60px;
-  height: 60px;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 0;
-  margin: 0;
-  line-height: 60px;
-  text-align: center;
-  cursor: pointer; 
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .sb-search-submit {
-  background: #fff; /*IE needs this*/
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
-  filter: alpha(opacity=0); /*IE 5-7*/
-  opacity: 0;
-  color: transparent;
-  border: none;
-  outline: none;
-  z-index: -1;
+    background: #fff;
+    /*IE needs this*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /*IE 5-7*/
+    opacity: 0;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: -1;
 }
 
 .sb-icon-search {
- z-index: 90;  
-   -webkit-font-smoothing: antialiased;
+    z-index: 90;
+    -webkit-font-smoothing: antialiased;
 }
 
 .sb-search.sb-search-open {
-  width: 80%;
+    width: 80%;
 }
 
 .sb-search.sb-search-open .sb-icon-search {
-  color: #fff;
-  z-index: 11;
+    color: #fff;
+    z-index: 11;
 }
 
 .sb-search.sb-search-open .sb-search-submit {
-  z-index: 90;
+    z-index: 90;
 }
 
 // Конец формы поиска
@@ -320,13 +331,30 @@ input[type="search"].sb-search-input {
 
 .sasp__logo {
     margin-bottom: 25px;
+    font-size: 16px;
+    @media screen and (max-width: 480px) {
+        width: 300px;
+        height: 65px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 300px;
+        height: 65px;
+    }
+
 }
+
+.sasp__text {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    float: right;
+}
+
 
 .bg-block-01 {
     background: url(../img/background.png) no-repeat;
-    background-size: cover;
-    color: #fff;
     width: 100%;
+    background-size: cover;
 }
 
 .bg {
@@ -334,29 +362,34 @@ input[type="search"].sb-search-input {
     background-size: cover;
     color: #fff;
     width: 100%;
-    height: 585px;
-    ;
 }
 
 .blog-info {
-    padding: 85px;
+    padding: 60px 0px 60px 0px;
 }
 
 .about__organization__text {
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 30px;
+
     @media screen and (max-width: 1600px) {
         font-size: 24px;
-    }    
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
 }
 
 .about__organization__text__two {
     font-size: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+
     @media screen and (max-width: 1600px) {
         font-size: 14px;
-    }   
+    }
+
     @media screen and (max-width: 1180px) {
         font-size: 12px;
     }
@@ -366,11 +399,24 @@ input[type="search"].sb-search-input {
     background-color: #ff5d5d;
     border-radius: 3px;
     text-align: center;
-    padding: 15px;
+    border: none;
+    display: block;
     width: 45%;
-    @media screen and (max-width: 1600px) {
+
+    @media screen and (max-width: 1400px) {
         width: 100%;
     }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+
+
+}
+
+.button__zayavka__online a {
+    display: block;
+    padding: 15px;
 }
 
 .button__zayavka__online:hover {
@@ -405,7 +451,7 @@ input[type="search"].sb-search-input {
 }
 
 .prof__standart {
-    width: 49%;    
+    width: 49%;
     background-color: #fff;
     border-radius: 3px;
     margin-bottom: 35px;
@@ -417,16 +463,17 @@ input[type="search"].sb-search-input {
     padding: 20px 35px;
     text-decoration: none;
     display: block;
+
     @media screen and (max-width: 1125px) {
         font-size: 16px;
     }
 }
 
 .oblast__deatelnosti {
-    width: 49%;    
+    width: 49%;
     background-color: #fff;
     border-radius: 3px;
-    margin-bottom: 30px;   
+    margin-bottom: 30px;
 }
 
 .obl__text a {
@@ -435,6 +482,7 @@ input[type="search"].sb-search-input {
     padding: 20px 35px;
     text-decoration: none;
     display: block;
+
     @media screen and (max-width: 1125px) {
         font-size: 16px;
     }
@@ -454,17 +502,18 @@ input[type="search"].sb-search-input {
     font-size: 22px;
     font-weight: 450;
     margin-bottom: 15px;
+
     @media screen and (max-width: 1600px) {
         margin-bottom: 0;
     }
 }
 
 
-
 .attestat-svarshik {
     font-size: 16px;
     font-weight: 100;
     margin-bottom: 10px;
+
     @media screen and (max-width: 1600px) {
         font-size: 12px;
     }
@@ -481,7 +530,8 @@ input[type="search"].sb-search-input {
     font-size: 28px;
     font-weight: 650;
     color: #ff5d5d;
-    margin-bottom: 17px;
+    margin-bottom: 12px;
+
     @media screen and (max-width: 1600px) {
         font-size: 16px;
     }
@@ -490,10 +540,11 @@ input[type="search"].sb-search-input {
 .button__uslugi {
     border: 1px solid #fff;
     border-radius: 3px;
-    width: 35%;    
-        @media screen and (max-width: 1600px) {
-            width: 100%;
-        }   
+    width: 35%;
+
+    @media screen and (max-width: 1600px) {
+        width: 100%;
+    }
 }
 
 
@@ -526,7 +577,8 @@ input[type="search"].sb-search-input {
 
 .block__uslugi {
     background-color: #fbfbfb;
-    padding: 50px;
+    padding: 75px 0px 55px 0px;
+    ;
     max-width: 100%;
 }
 
@@ -577,8 +629,8 @@ input[type="search"].sb-search-input {
 .news__header {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 35px;
-    margin-top: 35px;
+    padding: 35px 0px 35px 0px;
+
 }
 
 .all__news__button {
@@ -615,6 +667,10 @@ input[type="search"].sb-search-input {
     width: 80%;
     padding: 35px;
     opacity: 0;
+    @media screen and (max-width: 992px) {
+        opacity: 1;
+        width: 100%;
+    }
 }
 
 .block__img__news {
@@ -630,6 +686,12 @@ input[type="search"].sb-search-input {
     border-radius: 3px;
     width: 100%;
     height: 402px;
+    @media screen and (max-width: 768px) {
+        opacity: 1;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
 }
 
 .block__news__box:hover .die__for__text {
@@ -655,6 +717,10 @@ input[type="search"].sb-search-input {
     width: 30%;
     padding: 35px;
     opacity: 0;
+    @media screen and (max-width: 992px) {
+        opacity: 1;
+        width: 100%;
+    }
 }
 
 .block__news__box__two {
@@ -705,6 +771,12 @@ input[type="search"].sb-search-input {
     border-radius: 3px;
     padding: 35px;
     max-width: 100%;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 25px;        
+    }
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 25px;
+    }
 }
 
 .block__agreements:hover {
@@ -839,6 +911,7 @@ input[type="search"].sb-search-input {
     background: -webkit-linear-gradient(bottom right, rgba(33, 79, 165, 1.0), rgba(58, 160, 218, 1.0));
     background: -moz-linear-gradient(bottom right, rgba(33, 79, 165, 1.0), rgba(58, 160, 218, 1.0));
     background: linear-gradient(bottom right, rgba(33, 79, 165, 1.0), rgba(58, 160, 218, 1.0));
+    margin-bottom: 35px;
 }
 
 .ask__box:hover {
@@ -852,14 +925,14 @@ input[type="search"].sb-search-input {
 
 .ask__button__text {
     border: 1px #fff solid;
-    border-radius: 3px;    
+    border-radius: 3px;
     color: #fff;
     font-size: 16px;
     float: right;
     background: transparent;
 }
 
-.ask__button__text a{
+.ask__button__text a {
     display: block;
     color: #ffffff;
     padding: 10px;
@@ -885,6 +958,7 @@ input[type="search"].sb-search-input {
     background: -webkit-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
     background: -moz-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
     background: linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
+    margin-bottom: 35px;
 }
 
 .search__text__header {
@@ -900,10 +974,11 @@ input[type="search"].sb-search-input {
 .button__search__work {
     background-color: #ffdc4e;
     border-radius: 3px;
-    border: none;         
+    border: none;
     float: right;
 }
-.button__search__work a{
+
+.button__search__work a {
     display: block;
     color: #ffffff;
     padding: 10px;
@@ -956,6 +1031,7 @@ input[type="search"].sb-search-input {
     background: -webkit-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
     background: -moz-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
     background: linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
+    margin-bottom: 35px;
 }
 
 .journal__box__img {
@@ -1027,8 +1103,7 @@ input[type="search"].sb-search-input {
 }
 
 .menu__footer {
-    padding: 55px 0px 0px 0px;
-    margin-bottom: 60px;
+    padding: 55px 0px 0px 0px;       
 }
 
 .menu__footer li {
@@ -1036,6 +1111,9 @@ input[type="search"].sb-search-input {
     font-size: 14px;
     font-weight: 400;
     padding: 0px 15px;
+    @media screen and (max-width: 1340px) {
+        display: none;
+    }
 }
 
 .menu__footer li:hover {
@@ -1113,21 +1191,10 @@ input[type="search"].sb-search-input {
     font-weight: 500;
     background: transparent;
     padding: 0px 15px;
-    @media screen and (max-width : 1535px) {
-        flex: 1 1;
-        margin: 0px 0px 10px;        
-    }
-    @media screen and (max-width : 1200px) {
-        flex: 1 1;
-        margin: 0px;
-        margin-right: 15px;
-           } 
-      
 }
 
 .button__zayavka__footer a {
-    display: block;
-    // padding: 12px 10px;
+    display: block;    
     color: #ffffff;
     line-height: 44px;
     white-space: nowrap;
@@ -1142,5 +1209,3 @@ input[type="search"].sb-search-input {
     background-color: rgba(255, 255, 255, 0.3);
     color: #fff;
 }
-
-

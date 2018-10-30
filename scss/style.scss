@@ -25,12 +25,7 @@
     align-items: center;
 
     @media screen and (max-width: 1500px) {
-        margin: 0px;
-
-        @media screen and (max-width: 1199px) {
-            display: flex;
-            justify-content: space-between;
-        }
+        margin: 0px;       
     }
 }
 
@@ -61,4 +56,17 @@
         flex-flow: row wrap;
         justify-content: space-between;    
     }
+}
+
+
+.info__number__atestat__block{
+    @media screen and (max-width: 480px) {
+        display: none;
+     }
+}
+
+.info__text__right{
+    @media screen and (max-width: 480px) {
+        display: none;
+     }
 }
