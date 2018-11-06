@@ -38,127 +38,106 @@
   <div w3-include-html="includes/modal-windows.html"></div>
   <!-- End Include MODAL WINDOW -->
 
-  <!-- Include BURGER MENU -->
-  <div w3-include-html="includes/burger__menu.html"></div>
-  <!-- End Include BURGER MENU  -->
+<!-- Меню -->
+<div class="menu__background">
+  <div class="container ">
+    <div class="row align-items-center">
+      <div class="col-xl-12">
+        <div class="menu__navbar">
+          <!--Navbar-->
+          <nav class="navbar navbar-expand-lg navbar-dark primary-color">
 
-  <!-- Меню -->
-  <div class="menu__background">
-    <div class="container ">
-      <div class="row align-items-center">
-        <div class="col-7">
-          <nav>
-            <ul class="menu d-flex">
-              <li class="menu__item">
-                <a href="#">Главная</a>
-              </li>
+            <!-- Navbar brand -->
 
-              <li class="menu-item2">
-                <a href="#" class="arrow-head-menu">Центр</a>
-                <ul class="drop-menu">
-                  <li>
-                    <a href="#">Руководящий состав</a>
-                  </li>
-                  <li>
-                    <a href="#">Область деятельности</a>
-                  </li>
-                  <li>
-                    <a href="#">О Нас</a>
-                  </li>
-                </ul>
-              </li>
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+              aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-              <li class="menu-item2">
-                <a href="#" class="arrow-head-menu">Документы</a>
-                <ul class="drop-menu">
-                  <li>
-                    <a href="#">Руководящие документы</a>
-                  </li>
-                  <li>
-                    <a href="#">Нормативные документы</a>
-                  </li>
-                  <li>
-                    <a href="#">Соглашения</a>
-                  </li>
-                </ul>
-                </a>
-              </li>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
 
-              <li class="menu-item2">
-                <a href="#" class="arrow-head-menu">Услуги</a>
-                <ul class="drop-menu">
-                  <li>
-                    <a href="attestat-svarshik-specialist.html#specialist-block">
-                      Аттестация сварщиков <br>
-                      и специалистов сварочного
-                      производства</a>
-                  </li>
-                  <li>
-                    <a href="#">Оценка квалификаций</a>
-                  </li>
-                  <li>
-                    <a href="#">Неразрушающий контроль</a>
-                  </li>
-                  <li>
-                    <a href="#">Аттестация сварочного <br> оборудования</a>
-                  </li>
-                  <li>
-                    <a href="#">Экспертиза промышленной безопасности</a>
-                  </li>
-                  <li>
-                    <a href="#">Разрушающий контроль</a>
-                  </li>
-                  <li>
-                    <a href="#">Специальная подготовка
-                      сварщиков и специалистов сварочного производства
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">Аттестация сварочных материалов</a>
-                  </li>
-                  <li>
-                    <a href="#">Аттестация сварочных технологий</a>
-                  </li>
-                </ul>
-              </li>
+              <!-- Links -->
+              <ul class="navbar-nav mr-auto justify-content-around">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Главная
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
 
-              <li class="menu-item2">
-                <a href="#" class="arrow-head-menu">Выписка из реестра САСв</a>
-                <ul class="drop-menu">
-                  <li>
-                    <a href="#">Выписка из реестра САСв Ростехнадзора <br> сварочного технологий</a>
-                  </li>
-                  <li>
-                    <a href="#">Выписка из реестра САСв Ростехнадзора <br> сварочного оборудования</a>
-                  </li>
-                  <li>
-                    <a href="#">Выписка из реестра САСв Ростехнадзора <br> аттестации сварщиков</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                  <a class="nav__link__two dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Центр</a>
+                  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Руководящий состав</a>
+                    <a class="dropdown-item" href="#">Область деятельности</a>
+                    <a class="dropdown-item" href="#">О Нас</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav__link__two dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Услуги</a>
+                  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="attestat-svarshik-specialist.html#specialist-block">Аттестация сварщиков 
+                      и специалистов <br> сварочного производства</a>
+                    <a class="dropdown-item" href="#">Оценка квалификаций</a>
+                    <a class="dropdown-item" href="#">Неразрушающий контроль</a>
+                    <a class="dropdown-item" href="#">Аттестация сварочного <br> 
+                      оборудования
+                      </a>
+                    <a class="dropdown-item" href="#">Экспертиза промышленной безопасности</a>
+                    <a class="dropdown-item" href="#">Специальная подготовка сварщиков <br>и специалистов сварочного производства</a>
+                    <a class="dropdown-item" href="#">Аттестация сварочных материалов</a>
+                    <a class="dropdown-item" href="#">Аттестация сварочных технологий</a>
+
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav__link__two dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Документы</a>
+                  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="doc.html#doc-box">Руководящие документы</a>
+                    <a class="dropdown-item" href="#">Нормативные документы</a>
+                    <a class="dropdown-item" href="#">Соглашения</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav__link__two dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Выписка из реестра САСв</a>
+                  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Выписка из реестра <br> САСв Ростехнадзора 
+                      сварочного технологий</a>
+                    <a class="dropdown-item" href="#">Выписка из реестра <br> САСв Ростехнадзора 
+                      сварочного оборудования</a>
+                    <a class="dropdown-item" href="#">Выписка из реестра <br> САСв Ростехнадзора 
+                      аттестации сварщиков</a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Контакты
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+              </ul>              
+            </div>
+            <div class="search__form">
+              <form class="form-inline">
+                <div class="md-form my-0">
+                  <input class="form-control mr-sm-2 text-right" type="search" placeholder="Поиск по сайту" aria-label="Search">
+                </div>
+              </form>
+            </div>           
+
           </nav>
-        </div>
-        <div class="col-5 text-right">
-
-            <div id="sb-search" class="sb-search">
-                <form>
-                  <input type="search" class="sb-search-input" placeholder="Поиск по сайту" value="" name="search" id="search" />
-                  <input type="submit" class="sb-search-submit" value="" />
-                  <span class="sb-icon-search entypo-search" title="Поиск">
-                    <img src="img/icon__search.png" alt="">
-                  </span>
-                </form>
-              </div>
-
+          <!--/.Navbar-->
         </div>
       </div>
     </div>
-  </div>  
-  <!-- Конец меню -->
+  </div>
+</div>
+<!-- Конец меню -->
 
   <!-- Include CONTENT -->
   <div w3-include-html="includes/content.html"></div>
@@ -167,7 +146,7 @@
 
   <!-- Include FOOTER -->
   <div w3-include-html="includes/footer.html"></div>
-  <!-- End Include FOOTER --> 
+  <!-- End Include FOOTER -->
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -177,7 +156,7 @@
 
   <script>
     w3.includeHTML();
-  </script> 
+  </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>

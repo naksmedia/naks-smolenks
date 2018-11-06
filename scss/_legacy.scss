@@ -162,9 +162,6 @@ border: 1px red solid;
     white-space: nowrap;
 }
 
-
-
-
 .button__system__edo {
     color: #5ba4dd;
     border: 1px #5ba4dd solid;
@@ -195,167 +192,11 @@ border: 1px red solid;
     background-color: #3d83b9
 }
 
-/*--------------------- Меню ---------------------*/
-
-
-ul.menu {
-    padding-left: 0;
-    margin-bottom: 0;
-}
-
-.menu {
-    padding: 25px;
-    font-size: 16px;
-    justify-content: space-between;
-    list-style: none;
-    display: block;
-}
-
-
-.menu a {
-    color: #fff;
-    text-decoration: none;
-
-    @media screen and (max-width: 1200px) {
-        display: none;
-    }
-}
-
-.menu a:hover {
-    color: #e2e2e2;
-}
-
-/*--------------------- Выпадающее меню ---------------------*/
-
-.menu-item2 ul {
-    display: none;
-    margin: 0;
-    padding: 0;
-    background-color: #4d5055;
-    border-top: 25px solid #4b505c;
-    z-index: 1000;
-}
-
-.menu-item2:hover .drop-menu {
-    display: block;
-    position: absolute;
-
-}
-
-.drop-menu li {
-    list-style-type: none;
-    padding: 15px;
-    font-size: 14px;
-}
-
-.drop-menu li:hover {
-    background-color: #666c75;
-    transition: 0.3s;
-}
-
-.arrow-head-menu::after {
-    content: "";
-    position: absolute;
-    border: 5px solid;
-    border-color: transparent transparent transparent #fff;
-    transform: rotate(90deg);
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.menu__background {
-    background-color: #4b505c;
-}
-
-// Форма поиска
-
-.sb-search {
-    position: relative;
-    width: 0%;
-    min-width: 60px;
-    height: 60px;
-    float: right;
-    overflow: hidden;
-    -webkit-transition: width 0.3s;
-    -mos-transition: width 0.3s;
-    transition: width 0.3s;
-    -webkit-backface-visibility: hidden;
-}
-
-.sb-search-input {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: none;
-    outline: none;
-    background: transparent;
-    width: 100%;
-    height: 60px;
-    margin: 0;
-    z-index: 10;
-    padding: 20px 65px 20px 20px;
-    font-size: 14px;
-    color: #fff;
-}
-
-input[type="search"].sb-search-input {
-    -webkit-appearance: none;
-    -webkit-border-radius: 0px;
-}
-
-.sb-search-input::-webkit-input-placeholder {
-    color: #fff;
-}
-
-.sb-icon-search,
-.sb-search-submit {
-    width: 60px;
-    height: 60px;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    line-height: 60px;
-    cursor: pointer;
-}
-
-.sb-search-submit {
-    background: #fff;
-    /*IE needs this*/
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    /* IE 8 */
-    filter: alpha(opacity=0);
-    /*IE 5-7*/
-    opacity: 0;
-    color: transparent;
-    border: none;
-    outline: none;
-    z-index: -1;
-}
-
-.sb-icon-search {
-    z-index: 90;
-    -webkit-font-smoothing: antialiased;
-}
-
-.sb-search.sb-search-open {
-    width: 50%;
-}
-
-.sb-search.sb-search-open .sb-icon-search {
-    color: #fff;
-    z-index: 11;
-}
-
-.sb-search.sb-search-open .sb-search-submit {
-    z-index: 90;
-}
 
 // Конец формы поиска
 
-/*--------------------- Фон + информация ---------------------*/
+
+/*--------------------- БГ + информация ---------------------*/
 
 .sasp__logo {
     margin-bottom: 25px;
@@ -596,7 +437,7 @@ input[type="search"].sb-search-input {
 .content__header__uslugi {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 55px;
+    margin-bottom: 35px;
 }
 
 .box__uslug__two {
@@ -650,10 +491,12 @@ input[type="search"].sb-search-input {
 /*--------------------- Блок 2 Новости (block left - 1) ---------------------*/
 
 
-.our__client__header {
+
+.news__header__content {
     font-size: 24px;
     font-weight: 600;
-    padding: 35px 0px 35px 0px;
+    margin-bottom: 35px;
+    margin-top: 35px;
 }
 
 .all__news__button {
@@ -661,9 +504,11 @@ input[type="search"].sb-search-input {
     color: #3c3c3c;
     font-weight: 400;
     padding: 5px;
+
     @media screen and (max-width: 440px) {
         display: none;
     }
+
     @media screen and (max-width: 320px) {
         display: none;
     }
@@ -711,6 +556,10 @@ input[type="search"].sb-search-input {
     }
 }
 
+.block__news__one {
+    margin-bottom: 35px;
+}
+
 .block__img__news {
     background: url(../img/news__photo.png) no-repeat;
     background-size: cover;
@@ -750,7 +599,6 @@ input[type="search"].sb-search-input {
 }
 
 
-
 .die__for__text__two {
     background-color: rgba(45, 69, 125, 0.8);
     width: 30%;
@@ -783,20 +631,22 @@ input[type="search"].sb-search-input {
     opacity: 1;
 }
 
-
-
 .block__news__box__two:hover .die__for__text__two {
     opacity: 1;
     transition: 0.3s;
     margin-top: 100px;
 }
 
-
-
-
-
 /*--------------------- Блок 2 Новости (подблок основных новостей) ---------------------*/
 
+
+.recent__news__content {
+
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 35px;
+
+}
 
 .date__number__two {
     font-size: 12px;
@@ -815,6 +665,7 @@ input[type="search"].sb-search-input {
     border-radius: 3px;
     padding: 35px;
     max-width: 100%;
+    margin-bottom: 35px;
 
     @media screen and (max-width: 768px) {
         margin-bottom: 25px;
@@ -830,7 +681,6 @@ input[type="search"].sb-search-input {
     transform: scale(1.02, 1.02);
     transition: 0.3s;
 }
-
 
 .agreements__header__text {
     font-weight: 550;
@@ -882,6 +732,12 @@ input[type="search"].sb-search-input {
 }
 
 /*--------------------- Блок 3 Статьи ---------------------*/
+
+.articles__header__content {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
 
 .articles__box {
     background-color: #e6f3ff;
@@ -952,7 +808,7 @@ input[type="search"].sb-search-input {
 .ask__text__small {
     font-size: 14px;
     color: #fff;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .ask__box {
@@ -982,12 +838,18 @@ input[type="search"].sb-search-input {
     border-radius: 3px;
     color: #fff;
     font-size: 16px;
-    text-align: right;
     background: transparent;
     float: right;
-    // @media screen and (max-width: 490px) {
-    //     font-size: 12px;        
-    // }
+
+    @media screen and (max-width: 320px) {
+        float: left;
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 440px) {
+        float: left;
+        margin-top: 10px;
+    }
 }
 
 .ask__button a {
@@ -1132,6 +994,12 @@ input[type="search"].sb-search-input {
 }
 
 /*--------------------- Блок 4 Our client ---------------------*/
+
+.our__client__header {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 35px 0px 35px 0px;
+}
 
 .our__client__block {
     margin-bottom: 50px;
@@ -1350,8 +1218,8 @@ input[type="search"].sb-search-input {
     border: 1px solid rgb(172, 172, 172);
     border-radius: 3px;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .button__back__to__main__text {
@@ -1575,6 +1443,7 @@ input[type="search"].sb-search-input {
     font-size: 14px;
     font-weight: 400;
     color: #404040;
+
     @media screen and (max-width: 320px) {
         font-size: 10px
     }
@@ -1596,6 +1465,7 @@ input[type="search"].sb-search-input {
     border: 1px solid #e8e8e8;
     border-radius: 3px;
     padding: 10px;
+
     @media screen and (max-width: 320px) {
         display: none;
     }
@@ -1660,7 +1530,7 @@ input[type="search"].sb-search-input {
     background-color: transparent;
     border: none;
     margin-top: 10px;
-    padding: 0;  
+    padding: 0;
 }
 
 .soglashenie__button__text {
@@ -1678,15 +1548,14 @@ input[type="search"].sb-search-input {
     background-color: rgba(228, 228, 228, 0.5);
 }
 
-.more__news__button{
+.more__news__button {
     background-color: transparent;
     border: none;
     padding: 0;
-    margin-top: 35px;        
-        
+
 }
 
-.more__news__button__text{
+.more__news__button__text {
     background-color: #4d6692;
     border-radius: 3px;
     display: block;
@@ -1696,22 +1565,64 @@ input[type="search"].sb-search-input {
     padding: 8px 15px;
 }
 
-.more__news__button__text:hover{
-    background-color: #3b537e;        
+.more__news__button__text:hover {
+    background-color: #3b537e;
 }
 
 .more__news__button a {
-    color: #fff;       
+    color: #fff;
 }
 
 
-.gallery__news{
+.gallery__news {
     @media screen and (max-width: 1199px) {
         margin-top: 25px;
-       margin-bottom: 25px;
+        margin-bottom: 25px;
     }
 }
 
-.otsput{
-    margin-bottom: 25px;
+.otsput {
+    margin-bottom: 35px;
 }
+
+// Страница - документы
+.header__document {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 35px;
+}
+
+
+.doc__box {
+    background-color: #f9f9f9;
+}
+
+.document__one {
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+
+
+.document__name__text{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.button__download__document{
+    border: none;
+    background-color: transparent;
+    background-color: #d0d0d0;
+    padding: 7px 20px;
+    border-radius: 3px;
+    color: #a7a7a7;
+    font-size: 16px;
+    display: block;
+}
+
+.button__download__document a{
+        color: #fff;
+}
+//

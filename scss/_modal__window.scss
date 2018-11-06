@@ -1,4 +1,8 @@
 /* Modal Window */
+.modal{
+	z-index: 100001;
+}
+
 .modal .custom-control-label a {
 	text-decoration: underline;
 }
@@ -68,6 +72,13 @@
 }
 
 input ~ label[for="soglasie"] {
+    width: 100%;
+	font-size: 16px;
+	margin: 10px 0px 0px 10px;
+	padding: 0px;
+ }
+
+ input ~ label[for="sogl"] {
     width: 100%;
 	font-size: 16px;
 	margin: 10px 0px 0px 10px;

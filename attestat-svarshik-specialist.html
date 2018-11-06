@@ -38,522 +38,465 @@
   <div w3-include-html="includes/modal-windows.html"></div>
   <!-- End Include MODAL WINDOW -->
 
-  <!-- Include BURGER MENU -->
-  <div w3-include-html="includes/burger__menu.html"></div>
-  <!-- End Include BURGER MENU  -->
 
-  <!-- Меню -->
-  <div class="menu__background">
-    <div class="container ">
-      <div class="row align-items-center">
-        <div class="col-7">
-          <nav>
-            <ul class="menu d-flex">
-              <li class="menu__item">
-                <a href="#">Главная</a>
-              </li>
+<!-- Меню -->
+<div class="menu__background">
+  <div class="container ">
+    <div class="row align-items-center">
+      <div class="col-xl-12">
+        <div class="menu__navbar">
+          <!--Navbar-->
+          <nav class="navbar navbar-expand-lg navbar-dark primary-color">
 
-              <li class="menu-item2">
-                <a href="#" class="arrow-head-menu">Центр</a>
-                <ul class="drop-menu">
-                  <li>
-                    <a href="#">Руководящий состав</a>
-                  </li>
-                  <li>
-                    <a href="#">Область деятельности</a>
-                  </li>
-                  <li>
-                    <a href="#">О Нас</a>
-                  </li>
-                </ul>
-              </li>
+            <!-- Navbar brand -->
 
-              <li class="menu-item2">
-                <a href="#" class="arrow-head-menu">Документы</a>
-                <ul class="drop-menu">
-                  <li>
-                    <a href="#">Руководящие документы</a>
-                  </li>
-                  <li>
-                    <a href="#">Нормативные документы</a>
-                  </li>
-                  <li>
-                    <a href="#">Соглашения</a>
-                  </li>
-                </ul>
-                </a>
-              </li>
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+              aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-              <li class="menu-item2">
-                <a href="#" class="arrow-head-menu">Услуги</a>
-                <ul class="drop-menu">
-                  <li>
-                    <a href="#">
-                      Аттестация сварщиков <br>
-                      и специалистов сварочного
-                      производства</a>
-                  </li>
-                  <li>
-                    <a href="#">Оценка квалификаций</a>
-                  </li>
-                  <li>
-                    <a href="#">Неразрушающий контроль</a>
-                  </li>
-                  <li>
-                    <a href="#">Аттестация сварочного <br> оборудования</a>
-                  </li>
-                  <li>
-                    <a href="#">Экспертиза промышленной безопасности</a>
-                  </li>
-                  <li>
-                    <a href="#">Разрушающий контроль</a>
-                  </li>
-                  <li>
-                    <a href="#">Специальная подготовка
-                      сварщиков и специалистов сварочного производства
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">Аттестация сварочных материалов</a>
-                  </li>
-                  <li>
-                    <a href="#">Аттестация сварочных технологий</a>
-                  </li>
-                </ul>
-              </li>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
 
-              <li class="menu-item2">
-                <a href="#" class="arrow-head-menu">Выписка из реестра САСв</a>
-                <ul class="drop-menu">
-                  <li>
-                    <a href="#">Выписка из реестра САСв Ростехнадзора <br> сварочного технологий</a>
-                  </li>
-                  <li>
-                    <a href="#">Выписка из реестра САСв Ростехнадзора <br> сварочного оборудования</a>
-                  </li>
-                  <li>
-                    <a href="#">Выписка из реестра САСв Ростехнадзора <br> аттестации сварщиков</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
+              <!-- Links -->
+              <ul class="navbar-nav mr-auto justify-content-around">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Главная
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                  <a class="nav__link__two dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Центр</a>
+                  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Руководящий состав</a>
+                    <a class="dropdown-item" href="#">Область деятельности</a>
+                    <a class="dropdown-item" href="#">О Нас</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav__link__two dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Услуги</a>
+                  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="attestat-svarshik-specialist.html#specialist-block">Аттестация сварщиков 
+                      и специалистов <br> сварочного производства</a>
+                    <a class="dropdown-item" href="#">Оценка квалификаций</a>
+                    <a class="dropdown-item" href="#">Неразрушающий контроль</a>
+                    <a class="dropdown-item" href="#">Аттестация сварочного <br> 
+                      оборудования
+                      </a>
+                    <a class="dropdown-item" href="#">Экспертиза промышленной безопасности</a>
+                    <a class="dropdown-item" href="#">Специальная подготовка сварщиков <br>и специалистов сварочного производства</a>
+                    <a class="dropdown-item" href="#">Аттестация сварочных материалов</a>
+                    <a class="dropdown-item" href="#">Аттестация сварочных технологий</a>
+
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav__link__two dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Документы</a>
+                  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Руководящие документы</a>
+                    <a class="dropdown-item" href="#">Нормативные документы</a>
+                    <a class="dropdown-item" href="#">Соглашения</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav__link__two dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Выписка из реестра САСв</a>
+                  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Выписка из реестра <br> САСв Ростехнадзора 
+                      сварочного технологий</a>
+                    <a class="dropdown-item" href="#">Выписка из реестра <br> САСв Ростехнадзора 
+                      сварочного оборудования</a>
+                    <a class="dropdown-item" href="#">Выписка из реестра <br> САСв Ростехнадзора 
+                      аттестации сварщиков</a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Контакты
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+              </ul>              
+            </div>
+            <div class="search__form">
+              <form class="form-inline">
+                <div class="md-form my-0">
+                  <input class="form-control mr-sm-2 text-right" type="search" placeholder="Поиск по сайту" aria-label="Search">
+                </div>
+              </form>
+            </div>           
+
           </nav>
-        </div>
-        <div class="col-5 text-right">
-
-          <div id="sb-search" class="sb-search">
-            <form>
-              <input type="search" class="sb-search-input" placeholder="Поиск по сайту" value="" name="search" id="search" />
-              <input type="submit" class="sb-search-submit" value="" />
-              <span class="sb-icon-search entypo-search" title="Поиск">
-                <img src="img/icon__search.png" alt="">
-              </span>
-            </form>
-          </div>
-
+          <!--/.Navbar-->
         </div>
       </div>
     </div>
   </div>
-  <!-- Конец меню -->
+</div>
+<!-- Конец меню -->
 
   <!-- Include CONTENT -->
   <div w3-include-html="includes/bg__header__block.html"></div>
   <!-- End Include CONTENT -->
 
-  <div class="block__uslugi">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <p class="content__header__uslugi ">Услуги Центра</p>
-        </div>
+  <!-- Services block -->
+<div class="block__uslugi">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <p class="content__header__uslugi ">Услуги Центра</p>
       </div>
-
-      <!-- services block 1 -->
-
-      <div class="box__uslug animated">
-        <div class="row d-flex">
-          <div class="col-sm-4 col-xl-2">
-            <div class="block__uslug__one">
-              <a href="attestat-svarshik-specialist.html#specialist-block">
-                <ul class="specialist__block">
-                  <img src="img/icon-01.png" class="mask__1" alt="">
-                  <li>
-                    Аттестация сварщиков <br>
-                    и специалистов сварочного <br>
-                    производства
-                  </li>
-                </ul>
-              </a>
-            </div>
+    </div> 
+    
+    <div class="box__uslug">
+      <div class="row d-flex">
+        <div class="col-sm-4 col-xl-2">
+          <div class="block__uslug__one">
+            <a href="attestat-svarshik-specialist.html#specialist-block">
+              <ul class="specialist__block">
+                <img src="img/icon-01.png" class="mask__1" alt="">
+                <li>
+                  Аттестация сварщиков <br>
+                  и специалистов сварочного <br>
+                  производства
+                </li>
+              </ul>
+            </a>
           </div>
-
-          <div class="col-sm-4 col-xl-2">
-            <div class="block__uslug__one">
-              <a href="#">
-                <ul class="specialist__block">
-                  <img src="img/icon-02.png" class="mask__1" alt="">
-                  <li>
-                    Оценка <br>
-                    квалификаций
-                  </li>
-                </ul>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-4 col-xl-2">
-            <div class="block__uslug__one">
-              <a href="#">
-                <ul class="specialist__block">
-                  <img src="img/icon-06.png" class="mask__1" alt="">
-                  <li>
-                    Неразрушающий <br>
-                    контроль
-                  </li>
-                </ul>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-4 col-xl-2">
-            <div class="block__uslug__one">
-              <a href="#">
-                <ul class="specialist__block">
-                  <img src="img/icon-03.png" class="mask__1" alt="">
-                  <li>
-                    Аттестация сварочного <br>
-                    оборудования
-                  </li>
-                </ul>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-4 col-xl-2">
-            <div class="block__uslug__one">
-              <a href="#">
-                <ul class="specialist__block">
-                  <img src="img/icon-04.png" class="mask__1" alt="">
-                  <li>
-                    Экспертиза промышленной <br>
-                    безопасности
-                  </li>
-                </ul>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- </div> -->
-
-          <!-- </div> -->
-
-          <!-- <div class="box__uslug__two  "> -->
-          <!-- <div class="row d-flex"> -->
-          <div class="col-sm-4 col-xl-2">
-            <div class="block__uslug__one">
-              <a href="#">
-                <ul class="specialist__block">
-                  <img src="img/icon-09.png" class="mask__1" alt="">
-                  <li>
-                    Разрушающий <br>
-                    контроль
-                  </li>
-                </ul>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-4 col-xl-2">
-            <div class="block__uslug__one">
-              <a href="#">
-                <ul class="specialist__block">
-                  <img src="img/icon-05.png" class="mask__1" alt="">
-                  <li>
-                    Специальная подготовка <br>
-                    сварщиков и специалистов <br>
-                    сварочного производства
-                  </li>
-                </ul>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-4 col-xl-2">
-            <div class="block__uslug__one">
-              <a href="#">
-                <ul class="specialist__block">
-                  <img src="img/icon-08.png" class="mask__1" alt="">
-                  <li>
-                    Аттестация сварочных <br>
-                    материалов
-                  </li>
-                </ul>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-4 col-xl-2">
-            <div class="block__uslug__one">
-              <a href="#">
-                <ul class="specialist__block">
-                  <img src="img/icon-07.png" class="mask__1" alt="">
-                  <li>
-                    Аттестация сварочных <br>
-                    технологий
-                  </li>
-                </ul>
-              </a>
-            </div>
-          </div>
-
         </div>
+
+        <div class="col-sm-4 col-xl-2">
+          <div class="block__uslug__one">
+            <a href="#">
+              <ul class="specialist__block">
+                <img src="img/icon-02.png" class="mask__1" alt="">
+                <li>
+                  Оценка <br>
+                  квалификаций
+                </li>
+              </ul>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-xl-2">
+          <div class="block__uslug__one">
+            <a href="#">
+              <ul class="specialist__block">
+                <img src="img/icon-06.png" class="mask__1" alt="">
+                <li>
+                  Неразрушающий <br>
+                  контроль
+                </li>
+              </ul>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-xl-2">
+          <div class="block__uslug__one">
+            <a href="#">
+              <ul class="specialist__block">
+                <img src="img/icon-03.png" class="mask__1" alt="">
+                <li>
+                  Аттестация сварочного <br>
+                  оборудования
+                </li>
+              </ul>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-xl-2">
+          <div class="block__uslug__one">
+            <a href="#">
+              <ul class="specialist__block">
+                <img src="img/icon-04.png" class="mask__1" alt="">
+                <li>
+                  Экспертиза промышленной <br>
+                  безопасности
+                </li>
+              </ul>
+            </a>
+          </div>
+        </div>
+   
+        <div class="col-sm-4 col-xl-2">
+          <div class="block__uslug__one">
+            <a href="#">
+              <ul class="specialist__block">
+                <img src="img/icon-09.png" class="mask__1" alt="">
+                <li>
+                  Разрушающий <br>
+                  контроль
+                </li>
+              </ul>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-xl-2">
+          <div class="block__uslug__one">
+            <a href="#">
+              <ul class="specialist__block">
+                <img src="img/icon-05.png" class="mask__1" alt="">
+                <li>
+                  Специальная подготовка <br>
+                  сварщиков и специалистов <br>
+                  сварочного производства
+                </li>
+              </ul>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-xl-2">
+          <div class="block__uslug__one">
+            <a href="#">
+              <ul class="specialist__block">
+                <img src="img/icon-08.png" class="mask__1" alt="">
+                <li>
+                  Аттестация сварочных <br>
+                  материалов
+                </li>
+              </ul>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-xl-2">
+          <div class="block__uslug__one">
+            <a href="#">
+              <ul class="specialist__block">
+                <img src="img/icon-07.png" class="mask__1" alt="">
+                <li>
+                  Аттестация сварочных <br>
+                  технологий
+                </li>
+              </ul>
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
-  <div class="attestat__svarshik__specialist__block" id="specialist-block">
-    <div class="container">
-      <button class="button__back__to__main">
-        <a href="index.html" class="button__back__to__main__text text-align-center">
-          <img src="/img/arrow__next-01.png" class="arrow__back__one" alt=""> На главную
-        </a>
-      </button>
-      <div class="row">
-        <div class="col-xl-4">
-          <p class="header__attestat__svarshik__specialist">
-            Аттестация сварщиков и специалистов сварочного производства
+</div>
+
+<div class="attestat__svarshik__specialist__block" id="specialist-block">
+  <div class="container">
+    <button class="button__back__to__main">
+      <a href="index.html" class="button__back__to__main__text text-align-center">
+        <img src="/img/arrow__next-01.png" class="arrow__back__one" alt=""> На главную
+      </a>
+    </button>
+    <div class="row">
+      <div class="col-xl-4">
+        <p class="header__attestat__svarshik__specialist">
+          Аттестация сварщиков и специалистов сварочного производства
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-8">
+        <div class="service_information_acccp">
+          <p class="text__info__vsootvetstvii">
+            В соответствии с ПБ 03-273-99
+            «Правила аттестации сварщиков и специалистов сварочного
+            производства» и <br> РД 03-495-02 «Технологический регламент
+            проведения аттестации сварщиков
+            и специалистов сварочного производства»
+            <button class="podat__zayavku" data-toggle="modal" data-target="#modal-statement">Подать заявку
+              <!-- <a href="#" class="podat__zayavku__text" data-toggle="modal" data-target="#modal-statement">
+                Подать заявку</a> -->
+            </button>
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xl-8">
-          <div class="service_information_acccp">
-            <p class="text__info__vsootvetstvii">
-              В соответствии с ПБ 03-273-99
-              «Правила аттестации сварщиков и специалистов сварочного
-              производства» и <br> РД 03-495-02 «Технологический регламент
-              проведения аттестации сварщиков
-              и специалистов сварочного производства»
-              <button class="podat__zayavku" data-toggle="modal" data-target="#modal-statement">Подать заявку
-                <!-- <a href="#" class="podat__zayavku__text" data-toggle="modal" data-target="#modal-statement">
-                  Подать заявку</a> -->
+      <div class="col-xl-4">
+        <div class="ask__box">
+          <div class="ask__text__header">
+            <p class="ask__text">
+              Возникли вопросы?
+              <button class="ask__button">
+                <a href="#" data-toggle="modal" data-target="#modal-question">
+                  Задать вопрос</a>
               </button>
             </p>
           </div>
+          <p class="ask__text__small">
+            Воспользуйтесь формой <br>
+            <strong>«Задать вопрос»</strong> <br>
+            и наш специалист ответит вам <br>
+            в ближайшее время
+          </p>
         </div>
-        <div class="col-xl-4">
-          <div class="ask__box">
-            <div class="ask__text__header">
-              <p class="ask__text">
-                Возникли вопросы?
-                <button class="ask__button">
-                  <a href="#" data-toggle="modal" data-target="#modal-question">
-                    Задать вопрос</a>
-                </button>
-              </p>
-            </div>
-            <p class="ask__text__small">
-              Воспользуйтесь формой <br>
-              <strong>«Задать вопрос»</strong> <br>
-              и наш специалист ответит вам <br>
-              в ближайшее время
-            </p>
-          </div>
+      </div>
+      <div class="col-xl-8">
+        <div class="perechen__vidov__svarki">
+          <p class="perechen__text">
+            Перечень видов (способов) сварки, по которым <br>
+            производится аттестация в Аттестационном пункте № АЦСТ-11
+          </p>
         </div>
-        <div class="col-xl-8">
-          <div class="perechen__vidov__svarki">
-            <p class="perechen__text">
-              Перечень видов (способов) сварки, по которым <br>
-              производится аттестация в Аттестационном пункте № АЦСТ-11
-            </p>
-          </div>
-          <div class="perechen__box">
-            <div class="table-responsive">
-              <table class="table">
-              <tr>
-                <td>•ААДП</td>
-                <td>•АПГ</td>
-                <td>•АПС</td>
-                <td>•КСО</td>
-                <td>•МАДП</td>
-                <td>•МП</td>
-              </tr>
-              <tr>
-                <td>•ААДП</td>
-                <td>•АПГ</td>
-                <td>•АПС</td>
-                <td>•КСО</td>
-                <td>•МАДП</td>
-                <td>•МП</td>
-              </tr>
-              <tr>
-                <td>•ААДП</td>
-                <td>•АПГ</td>
-                <td>•АПС</td>
-                <td>•КСО</td>
-                <td>•МАДП</td>
-                <td>•МП</td>
-              </tr>
-            </table>
-            </div>
-            
+        <div class="perechen__box">
+          <div class="table-responsive">
+            <table class="table">
+            <tr>
+              <td>•ААДП</td>
+              <td>•АПГ</td>
+              <td>•АПС</td>
+              <td>•КСО</td>
+              <td>•МАДП</td>
+              <td>•МП</td>
+            </tr>
+            <tr>
+              <td>•ААДП</td>
+              <td>•АПГ</td>
+              <td>•АПС</td>
+              <td>•КСО</td>
+              <td>•МАДП</td>
+              <td>•МП</td>
+            </tr>
+            <tr>
+              <td>•ААДП</td>
+              <td>•АПГ</td>
+              <td>•АПС</td>
+              <td>•КСО</td>
+              <td>•МАДП</td>
+              <td>•МП</td>
+            </tr>
+          </table>
+          </div>          
 
-           <!--  <div class="col-lg-1">
-              <p>•ААДП</p>
-              <p>•АПГ</p>
-              <p>•АПС</p>
-            </div>
-            <div class="col-lg-1">
-              <p>•КСО</p>
-              <p>•МАДП</p>
-              <p>•МП</p>
-            </div>
-            <div class="col-lg-1">
-              <p>•РАД</p>
-              <p>•РАДН</p>
-              <p>•РД</p>
-            </div>
-            <div class="col-lg-1">
-              <p>•АФ</p>
-              <p>•АФПН</p>
-              <p>•Г</p>
-            </div>
-            <div class="col-lg-1">
-              <p>•МПГ</p>
-              <p>•МПС</p>
-              <p>•МФ</p>
-            </div>
-            <div class="col-lg-1">
-              <p>•РДН</p>
-              <p>•МПС</p>
-              <p>•Т</p>
-            </div> -->
-          </div>
         </div>
-        <div class="col-xl-4">
-          <div class="rules__box">
-            <p class="rules__text">Правила аттестации</p>
-            <div class="link__rules">
-              <p><a href="">• ПБ 03-273-99</a></p>
-              <p><a href="">• РД 03-495-02</a></p>
-              <p><a href="">• РД-03.120.10-КТН-001-11</a></p>
-            </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="rules__box">
+          <p class="rules__text">Правила аттестации</p>
+          <div class="link__rules">
+            <p><a href="">• ПБ 03-273-99</a></p>
+            <p><a href="">• РД 03-495-02</a></p>
+            <p><a href="">• РД-03.120.10-КТН-001-11</a></p>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xl-8">
-          <div class="service_information_acccp__text__box">
-            <p class="acccp__text">Для заключения договора на аттестацию
-              сварщика и зачисления в группу специальной <br>
-              подготовки перед аттестацией заявитель представляет <br>
-              в аттестационный центр следующие документы:</p>
+    </div>
+    <div class="row">
+      <div class="col-xl-8">
+        <div class="service_information_acccp__text__box">
+          <p class="acccp__text">Для заключения договора на аттестацию
+            сварщика и зачисления в группу специальной <br>
+            подготовки перед аттестацией заявитель представляет <br>
+            в аттестационный центр следующие документы:</p>
+          <div class="line__text__one"></div>
+          <p class="text__documenti"> • Карточку предприятия с банковскими реквизитами; <br>
+            • Заявку в 2-х экземплярах (номер присваивается в аттестационном центре); <br>
+            • Документ и копию документа о начальной подготовке (переподготовке, повышении квалификации) по
+            специальности; <br>
+            • Документ и копию документа о повышении квалификации с присвоенным разрядом не ниже указанного в
+            руководящей и нормативно-технической документации на сварку; <br>
+            • Аттестационное удостоверение (если аттестация не первичная); <br>
+            • Справку об общем стаже работы по сварке (копию или выписку из трудовой книжки); <br>
+            • Цветную фотографию размером 3*4; <br>
+            • Медицинскую справку установленного образца об отсутствии противопоказаний к работе сварщиком.</p>
+          <div class="vazno__znyat__slide">
+            <input type="checkbox" id="hd-1" class="slide__hide" />
+            <label for="hd-1">Важно знать!</label>
+            <p class="slide__text__vazno__znyat">
+              <strong>Если сварщик имеет опыт работы</strong> по ручной сварке, то в стаж его работы при аттестации на сварку
+              механизированными и автоматическими способами сварки разрешается засчитывать стаж работы по ручной
+              сварке. <br>
+            <strong>Если сварщик имеет опыт работы</strong> по механизированным способам сварки, то в стаж его работы при аттестации
+              на сварку автоматическими способами сварки разрешается засчитывать стаж работы по механизированным
+              способам сварки. <br>
+              <strong>Если кандидат самостоятельно</strong> представляет заявку на проведение аттестации, он должен иметь разряд не
+              ниже 4-го.
+            </p>
+
+
+          </div>
+          <p class="header__attestat__svarshik__four__liks">
+            Аттестация сварщиков <br> подразделяется <strong>на 4 звена</strong>
             <div class="line__text__one"></div>
-            <p class="text__documenti"> • Карточку предприятия с банковскими реквизитами; <br>
-              • Заявку в 2-х экземплярах (номер присваивается в аттестационном центре); <br>
-              • Документ и копию документа о начальной подготовке (переподготовке, повышении квалификации) по
-              специальности; <br>
-              • Документ и копию документа о повышении квалификации с присвоенным разрядом не ниже указанного в
-              руководящей и нормативно-технической документации на сварку; <br>
-              • Аттестационное удостоверение (если аттестация не первичная); <br>
-              • Справку об общем стаже работы по сварке (копию или выписку из трудовой книжки); <br>
-              • Цветную фотографию размером 3*4; <br>
-              • Медицинскую справку установленного образца об отсутствии противопоказаний к работе сварщиком.</p>
-            <div class="vazno__znyat__slide">
-              <input type="checkbox" id="hd-1" class="slide__hide" />
-              <label for="hd-1">Важно знать!</label>
-              <p class="slide__text__vazno__znyat">
-                <strong>Если сварщик имеет опыт работы</strong> по ручной сварке, то в стаж его работы при аттестации на сварку
-                механизированными и автоматическими способами сварки разрешается засчитывать стаж работы по ручной
-                сварке. <br>
-              <strong>Если сварщик имеет опыт работы</strong> по механизированным способам сварки, то в стаж его работы при аттестации
-                на сварку автоматическими способами сварки разрешается засчитывать стаж работы по механизированным
-                способам сварки. <br>
-                <strong>Если кандидат самостоятельно</strong> представляет заявку на проведение аттестации, он должен иметь разряд не
-                ниже 4-го.
-              </p>
-
-
-            </div>
-            <p class="header__attestat__svarshik__four__liks">
-              Аттестация сварщиков <br> подразделяется <strong>на 4 звена</strong>
-              <div class="line__text__one"></div>
+          </p>
+          <p class="four__liks__text">
+            <strong>Первичную аттестацию,</strong> которую проходят сварщики,
+            не имевшие ранее допуска к сварке соединений оборудования,
+            конструкций и трубопроводов, подконтрольных Ростехнадзору.
+          </p>
+          <p class="four__liks__text">
+            <strong>Периодическую аттестацию,</strong> которую проходят
+            сварщики в целях продления указанного срока действия
+            их аттестационных удостоверений на выполнение соответствующих
+            сварочных работ.
+          </p>
+          <p class="four__liks__text">
+            <strong>Дополнительную аттестацию,</strong> которую проходят
+            сварщики, прошедшие первичную аттестацию, перед
+            их допуском к сварочным работам, не указанным
+            в их аттестационных удостоверениях, а также после перерыва
+            выше 6 месяцев в выполнении сварочных работ, указанных в
+            их аттестационных удостоверениях.</p>
+          <p class="four__liks__text">
+            <strong>Внеочередную аттестацию,</strong> которую проходят
+            сварщики перед их допуском
+            к выполнению сварки после их временного отстранения
+            от работы за нарушение технологии сварки или повторяющееся
+            неудовлетворительное качество выполненных
+            ими производственных сварных соединений.
+          </p>
+          <div class="attestat__work">
+            <p class="attestat__work__text">
+              Аттестация сварщиков для работы на объектах МН ОАО
+              «АК «Транснефть» проводится с учетом дополнительных требований
+              и особенностей выполнения работ на объектах ОАО «АК «Транснефть»,
+              изложенных в <a href="#">РД-03.120.10-КТН-001-11</a> «Положение об аттестации
+              сварочного производства на объектах ОАО «АК «Транснефть»»
             </p>
-            <p class="four__liks__text">
-              <strong>Первичную аттестацию,</strong> которую проходят сварщики,
-              не имевшие ранее допуска к сварке соединений оборудования,
-              конструкций и трубопроводов, подконтрольных Ростехнадзору.
-            </p>
-            <p class="four__liks__text">
-              <strong>Периодическую аттестацию,</strong> которую проходят
-              сварщики в целях продления указанного срока действия
-              их аттестационных удостоверений на выполнение соответствующих
-              сварочных работ.
-            </p>
-            <p class="four__liks__text">
-              <strong>Дополнительную аттестацию,</strong> которую проходят
-              сварщики, прошедшие первичную аттестацию, перед
-              их допуском к сварочным работам, не указанным
-              в их аттестационных удостоверениях, а также после перерыва
-              выше 6 месяцев в выполнении сварочных работ, указанных в
-              их аттестационных удостоверениях.</p>
-            <p class="four__liks__text">
-              <strong>Внеочередную аттестацию,</strong> которую проходят
-              сварщики перед их допуском
-              к выполнению сварки после их временного отстранения
-              от работы за нарушение технологии сварки или повторяющееся
-              неудовлетворительное качество выполненных
-              ими производственных сварных соединений.
-            </p>
-            <div class="attestat__work">
-              <p class="attestat__work__text">
-                Аттестация сварщиков для работы на объектах МН ОАО
-                «АК «Транснефть» проводится с учетом дополнительных требований
-                и особенностей выполнения работ на объектах ОАО «АК «Транснефть»,
-                изложенных в <a href="#">РД-03.120.10-КТН-001-11</a> «Положение об аттестации
-                сварочного производства на объектах ОАО «АК «Транснефть»»
-              </p>
-            </div>
           </div>
         </div>
       </div>
-
-      <button class="button__back__to__main">
-        <a href="index.html" class="button__back__to__main__text text-align-center">
-          <img src="/img/arrow__next-01.png" class="arrow__back__one" alt=""> На главную
-        </a>
-      </button>
-      </div>       
     </div>
 
+    <button class="button__back__to__main">
+      <a href="index.html" class="button__back__to__main__text text-align-center">
+        <img src="/img/arrow__next-01.png" class="arrow__back__one" alt=""> На главную
+      </a>
+    </button>
+    </div>       
+  </div>
 
 
-    <!-- services block and -->
+
+  <!-- services block and -->
+
+  
+
+  <!-- Include FOOTER -->
+  <div w3-include-html="includes/footer.html"></div>
+  <!-- End Include FOOTER -->
 
 
-    <!-- Include FOOTER -->
-    <div w3-include-html="includes/footer.html"></div>
-    <!-- End Include FOOTER -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
 
+  <script src="js/script.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
+  <script>
+    w3.includeHTML();
+  </script>
 
-    <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
 
-    <script>
-      w3.includeHTML();
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

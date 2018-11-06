@@ -16,45 +16,45 @@ $(document).ready(function() {
 });
 
 
-// Выбрать несколько элементов
+// // Выбрать несколько элементов
 
-$('.sort').click(function () {
-    var mylist = $('.items');
-    var listitems = mylist.children('li').get();
-    listitems.sort(function (a, b) {
-      var compA = $(a).data('selected');
-      var compB = $(b).data('selected');
-      return (compA < compB) ? 1 : (compA > compB) ? 1 : 0;
-    });
-    $.each(listitems, function (idx, itm) { mylist.append(itm); });
-  })
+// $('.sort').click(function () {
+//     var mylist = $('.items');
+//     var listitems = mylist.children('li').get();
+//     listitems.sort(function (a, b) {
+//       var compA = $(a).data('selected');
+//       var compB = $(b).data('selected');
+//       return (compA < compB) ? 1 : (compA > compB) ? 1 : 0;
+//     });
+//     $.each(listitems, function (idx, itm) { mylist.append(itm); });
+//   })
   
-  $('li', '.items').click(function (){
-    var checks = $('[type="checkbox"]', '.checks');
-    var item = $(this);
+//   $('li', '.items').click(function (){
+//     var checks = $('[type="checkbox"]', '.checks');
+//     var item = $(this);
     
-    if(item.data('selected') == '0') {
-      item.data('selected', '1');
-      item.addClass('selected');
-    } else {
-      item.data('selected', '0');
-      item.removeClass('selected');
-    }
+//     if(item.data('selected') == '0') {
+//       item.data('selected', '1');
+//       item.addClass('selected');
+//     } else {
+//       item.data('selected', '0');
+//       item.removeClass('selected');
+//     }
     
-    checks.filter('[data-guid="'+item.data('guid')+'"]').prop('checked', item.data('selected') == '1');
-  });
+//     checks.filter('[data-guid="'+item.data('guid')+'"]').prop('checked', item.data('selected') == '1');
+//   });
   
 
-//   $('#jsMe').on('click', function() {
-//     $('#modal-close').modal('toggle');
-//     return false;
-// });
+// //   $('#jsMe').on('click', function() {
+// //     $('#modal-close').modal('toggle');
+// //     return false;
+// // });
 
-// $('#modal-close').on('shown', function () {
-//     $('body').on('wheel.modal mousewheel.modal', function () {return false;});
-// }).on('hidden', function () {
-//     $('body').off('wheel.modal mousewheel.modal');
-// });
+// // $('#modal-close').on('shown', function () {
+// //     $('body').on('wheel.modal mousewheel.modal', function () {return false;});
+// // }).on('hidden', function () {
+// //     $('body').off('wheel.modal mousewheel.modal');
+// // });
 
 
 function check() {
@@ -84,3 +84,31 @@ function check() {
       }
     });
   });
+
+
+// Бургер меню
+
+  // This code dosen't works on Firefox and IE and works on other browesers.
+$(document).ready(function () {
+  $('.animated-icon1,.animated-icon3,.animated-icon4').click(function () {
+    $(this).toggleClass('open');
+  });
+});
+
+// Works everywhere
+$(document).ready(function () {
+
+  // Hide/show animation hamburger function
+  $('.navbar-toggler').on('click', function () {
+
+    // Take this line to first hamburger animations
+    $('.animated-icon1').toggleClass('open');
+
+    // Take this line to second hamburger animation
+    $('.animated-icon3').toggleClass('open');
+
+    // Take this line to third hamburger animation
+    $('.animated-icon4').toggleClass('open');
+  });
+
+});

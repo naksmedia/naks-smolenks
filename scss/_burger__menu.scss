@@ -1,103 +1,112 @@
-.burger__menu{
-    display: none;
-    @media screen and (max-width : 1200px) {
-        display: block;
-    } 
+// Меню
+.menu__background {
+  background-color: #4b505c;
+  padding: 15px 0px 15px 0px;
 }
 
- input.burg__menu + label {
-    position: absolute;
-    height: 20px;
-    width: 35px;
-    z-index: 100000;
-    margin: 20px;
-  }
-  input + label span {
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    top: 50%;    
-    display: block;
-    background: #ffffff;
-    transition: .2s;    
-  }
-  input + label span:first-child {
-    top: 3px;
-  }
-  input + label span:last-child {
-    top: 16px;
-  }
-  label:hover {
-    cursor: pointer;
-  }
-  input:checked + label span {
-    opacity: 0;
-    top: 50%;
-  }
 
-
-
-  input:checked + label span:first-child {
-    opacity: 1;
-    transform: rotate(405deg);
-  }
-  input:checked + label span:last-child {
-    opacity: 1;
-    transform: rotate(-405deg);
-  }
-  input ~ nav {
-    background: #4b505c;
-    position: absolute;
-    // top: 0;
-    left: 0;
-    width: 100%;    
-    z-index: 10000;
-    transition: .5s;
-    transition-delay: .5s;
-    overflow: hidden;
-  }
-  input ~ nav > ul {    
-    position: absolute;
-    padding: 55px; 
-  }
-  input ~ nav > ul > li {
-    opacity: 0;
-    transition: .5s;
-    transition-delay: 0s;
-    list-style-type: none;
-  }
-  input ~ nav > ul > li > a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 500;    
-    display: block;
-    padding: 15px;
-  }
-  input ~ nav > ul > li > a:hover{
-    color: grey;
-  }
-  input:checked ~ nav { 
-    height: 100%;
-    transition-delay: 0s;
-  }
-  input:checked ~ nav > ul > li {
-    opacity: 1;
-    transition-delay: .2s;
-  }
-
-  .menu__burger__list ul {
-    display: none;
-    margin: 0;          
-    z-index: 1000;
+.menu__navbar ul {
+  color: #fff;
+  font-size: 16px;
+  @media screen and (max-width: 992px) {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      }    
 }
 
-.menu__burger__list li{
-    list-style-type: none;
-    padding: 10px;
-    font-size: 14px;
+.menu__navbar .navbar {
+  padding: 0;
 }
 
-.drop__menu a{
-    color: #fff;
+.menu__navbar .navbar li {
+  cursor: pointer;
 }
+
+.menu__navbar .navbar .nav-item .nav-link {
+  padding: 0;
+}
+
+.menu__navbar .navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+  margin-right: 15px;
+}
+
+.menu__navbar .navbar .nav-item .nav__link__two {
+  margin: 0px 20px 0px 20px;
+  @media screen and (max-width: 992px) {
+      padding: 0px 0px 15px;
+      }    
+}
+
+.navbar-dark .navbar-nav .nav-link .navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.dropdown-menu{
+  border-radius: 3px;
+  color: #fff;
+      @media screen and (max-width: 320px) {
+     font-size: 12px;
+     color: #fff; 
+ } 
+}
+
+.dropdown-item.active, .dropdown-item:active{
+  background-color: #4b505c;
+}
+
+.navbar-dark .navbar-toggler{
+  border-color: #fff;
+}
+// Конец меню
+
+// Форма поиска
+.form-control {
+  background-color: transparent;
+  @media screen and (max-width: 320px) {
+      margin-bottom: 15px;
+      margin-top: 15px;
+  }
+}
+
+.form-control:focus {
+  color: #fff;
+  background-color: transparent;
+  border-color: #ffffff;
+  outline: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+  color: #fff;
+}
+
+input[type="search"]:-ms-input-placeholder {
+  color: #fff;
+}
+
+input[type="search"]::-ms-input-placeholder {
+  color: #fff;
+}
+
+input[type="search"]::placeholder {
+  color: #fff;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+  color: transparent
+}
+
+.form-control:focus::-moz-placeholder {
+  color: transparent
+}
+
+.form-control:focus:-moz-placeholder {
+  color: transparent
+}
+
+.form-control:focus:-ms-input-placeholder {
+  color: transparent
+}
+  
