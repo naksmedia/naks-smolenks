@@ -891,6 +891,10 @@ border: 1px red solid;
 .search__text__header__two {
     font-size: 14px;
     color: #fff;
+
+    @media screen and (max-width: 416px) {
+        display: none;
+    }
 }
 
 .button__search__work {
@@ -898,6 +902,12 @@ border: 1px red solid;
     border-radius: 3px;
     border: none;
     float: right;
+
+    @media screen and (max-width: 320px) {
+        float: left;
+        margin-top: 10px;
+    }
+
 }
 
 .button__search__work a {
@@ -907,6 +917,7 @@ border: 1px red solid;
     white-space: nowrap;
     color: #000;
     font-size: 16px;
+
 }
 
 .adress__site_bw {
@@ -915,6 +926,10 @@ border: 1px red solid;
     font-size: 25px;
     margin-top: 27px;
     color: #fff;
+
+    @media screen and (max-width: 320px) {
+        margin-top: 10px;
+    }
 }
 
 .button__place__a__job {
@@ -1498,7 +1513,6 @@ border: 1px red solid;
     color: #000;
     line-height: 35px;
     margin-bottom: 35px;
-
     @media screen and (max-width: 320px) {
         font-size: 16px;
         line-height: 25px;
@@ -1592,37 +1606,289 @@ border: 1px red solid;
     padding-bottom: 35px;
 }
 
+.row__line__doc {
+    width: 75%;
+}
 
 .doc__box {
     background-color: #f9f9f9;
+    margin-bottom: 35px;
 }
 
-.document__one {
-    padding: 25px;
+.background__for__document {
+    padding: 45px;
     background-color: #fff;
     border-radius: 3px;
+    margin-bottom: 15px;
+    max-width: 75%;
+
+    @media screen and (max-width: 1375px) {
+        max-width: 100%;
+    }
 }
 
+.doc__icon {
+    margin-bottom: 10px;
+}
 
-
-.document__name__text{
+.document__name__text {
     font-size: 14px;
     font-weight: 400;
+    margin-bottom: 15px;
 }
 
-
-.button__download__document{
-    border: none;
-    background-color: transparent;
-    background-color: #d0d0d0;
-    padding: 7px 20px;
+.button__download__document {
+    background-color: #5ba4dd;
+    padding: 10px 15px;
     border-radius: 3px;
-    color: #a7a7a7;
+    color: #fff;
     font-size: 16px;
     display: block;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.button__download__document a{
-        color: #fff;
+.button__viev__document {
+    border: 1px solid #5ba4dd;
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: #5ba4dd;
+    font-size: 16px;
+    display: block;
+    text-align: center;
 }
-//
+
+.button__viev__document:hover {
+    background-color: #4c94ca;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.button__download__document:hover {
+    background-color: #397db1;
+    color: #fff;
+    transition: 0.2s;
+}
+
+
+.form__control__doc {
+    border-radius: 3px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    width: 100%;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+    padding: 10px;
+}
+
+label[for=search__name__text] {
+    font-size: 16px;
+}
+
+label[for=type__of__document] {
+    font-size: 16px;
+}
+
+#type__of__document {
+    border-radius: 3px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    width: 100%;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+    padding: 10px;
+    ;
+}
+
+.name__selected__document {
+    font-size: 20px;
+    font-weight: 400;
+    color: #505050;
+    margin-bottom: 35px;
+}
+
+.button__search__document {
+    border: none;
+    padding: 7px 35px;
+    border-radius: 3px;
+    background-color: #5ba4dd;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button__search__document:hover {
+    background-color: #3c86be;
+}
+
+// Конец стр документы
+
+// Контакты
+.header__contact {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 35px;
+}
+
+.name__selected__contact {
+    font-size: 20px;
+    font-weight: 400;
+    color: #505050;
+    margin-bottom: 35px;
+}
+
+.contact__block {
+    background-color: #f9f9f9;
+    margin-bottom: 35px;
+}
+
+.contact__white__box {
+    background-color: #fff;
+    padding: 45px;
+}
+
+.text__adress {
+    font-size: 20px;
+    font-weight: 350;
+    color: #000;
+}
+
+.line__for__text {
+    border-bottom: 2px solid #000;
+    width: 35px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.text__adress__contact {
+    font-size: 14px;
+    font-weight: 350;
+    color: #000;
+}
+
+.text__adress__number {
+    font-size: 18px;
+    font-weight: 450;
+    color: #000;
+}
+
+.adres__on__map__contact {
+    color: #9c9c9c;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.line__contact__after__text {
+    border-bottom: 1px solid #0173cc;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.name__face__contact {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #494949;
+}
+
+.contact__face {
+    font-size: 14px;
+    font-weight: 550;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+// Конец контакты
+
+
+// Область деятельности
+.odb__box {
+    background-color: #f9f9f9;
+    margin-bottom: 35px;
+
+}
+
+.header__oblast__deatelnosti {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+.obd__info {
+    font-size: 18px;
+    font-weight: 350;
+    color: #494949;
+    margin-bottom: 35px;
+}
+
+.info__box__head {
+    background-color: #fff;
+    padding: 45px;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+.number__reestr{
+    font-size: 16px;
+    color: #2e3e60;
+    font-weight: 450;   
+}
+
+.header__name__standart{
+    font-size: 16px;
+    color: #2e3e60;
+    font-weight: 450;
+}
+
+.header__obd__info {
+    background-color: rgba(186, 196, 220, 0.5);
+    padding: 15px 0px 15px 45px;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+.number__line__standart{
+    background-color: #fff;
+    padding: 15px 0px 15px 45px;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+.number__reestr__line{
+    font-size: 14px;
+    color: #2e3e60;
+    font-weight: 450; 
+    @media screen and (max-width: 575px) {
+        margin-bottom: 10px;
+    }  
+}
+
+.reestr__number{
+    font-size: 14px;
+    color: #2e3e60;
+    font-weight: 450;
+    @media screen and (max-width: 575px) {
+        margin-bottom: 10px;
+    }  
+}
+
+.header__name__standart__line{
+    font-size: 14px;
+    color: #2e3e60;
+    font-weight: 450;
+    @media screen and (max-width: 575px) {
+        margin-bottom: 10px;
+    }    
+}
+
+
+// Конец области деятельности
