@@ -82,13 +82,14 @@
                   </li>
                 </ul>              
               </div>
-              <div class="search__form">
-                <form class="form-inline">
-                  <div class="md-form my-0">
-                    <input class="form-control mr-sm-2 text-right" type="search" placeholder="Поиск по сайту" aria-label="Search">
-                  </div>
-                </form>
-              </div>           
+              <form class="form-inline my-2 my-lg-0  d-lg-block" action="#result" method="get">
+                <div class="input-group">
+                    <input type="text" class="form-control border" name="s" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-search bg-transparent border" type="submit" title="Поиск"><img src="/img/icon__search.png" alt="Поиск"></button>
+                    </div>
+                </div>
+            </form>           
   
             </nav>
             <!--/.Navbar-->
