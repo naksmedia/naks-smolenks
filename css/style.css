@@ -376,18 +376,6 @@ border: 1px red solid;
   margin-bottom: 35px;
   margin-top: 35px; }
 
-.all__news__button {
-  font-size: 16px;
-  color: #3c3c3c;
-  font-weight: 400;
-  padding: 5px; }
-  @media screen and (max-width: 440px) {
-    .all__news__button {
-      display: none; } }
-  @media screen and (max-width: 320px) {
-    .all__news__button {
-      display: none; } }
-
 .date__number {
   font-size: 14px;
   font-weight: 550;
@@ -1315,6 +1303,14 @@ border: 1px red solid;
   font-size: 14px;
   padding: 10px; }
 
+.form-control:focus {
+  color: #fff;
+  background-color: transparent;
+  border-color: #ffffff;
+  outline: 0;
+  box-shadow: none;
+  font-size: 0rem; }
+
 label[for=search__name__text] {
   font-size: 16px; }
 
@@ -1365,7 +1361,7 @@ label[for=type__of__document] {
 
 .contact__block {
   background-color: #f9f9f9;
-  margin-bottom: 35px; }
+  margin-bottom: 10px; }
 
 .contact__white__box {
   background-color: #fff;
@@ -1431,7 +1427,35 @@ label[for=type__of__document] {
   font-size: 18px;
   font-weight: 350;
   color: #494949;
+  margin-bottom: 15px; }
+
+.button__oblast__deatelnosti__list {
+  padding: 15px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  background-color: #494949;
+  border-radius: 3px;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
   margin-bottom: 35px; }
+
+.button__oblast__deatelnosti__list:hover {
+  background-color: #363636; }
+
+.card {
+  margin-bottom: 35px; }
+
+.text__dopusk {
+  font-size: 24px;
+  font-weight: 400;
+  color: #494949;
+  margin-bottom: 15px; }
+
+.img__box__card {
+  width: 50%; }
 
 .info__box__head {
   background-color: #fff;
@@ -1619,6 +1643,99 @@ label[for=type__of__document] {
   font-weight: 400;
   color: #000;
   margin-bottom: 15px; }
+
+.header__result {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px; }
+
+.result__text {
+  font-size: 18px;
+  color: #ec1414;
+  background-color: rgba(255, 30, 30, 0.1);
+  padding: 25px; }
+
+.o__kompanyi__block {
+  background-color: #f9f9f9;
+  margin-bottom: 10px; }
+
+.header__kompani {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px; }
+
+.kompani__white__box {
+  background-color: #fff;
+  padding: 45px; }
+
+.box__cok__dopusk {
+  background-color: #2e3f62;
+  padding: 25px; }
+
+.box__kompanyi__block {
+  background-color: transparent; }
+
+.box__cok__dopusk__text {
+  color: #fff;
+  font-size: 16px; }
+
+.content__text__kompanyi {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 15px; }
+
+.box__content__text__kompanyi {
+  margin-top: 35px;
+  padding: 35px;
+  background-color: #fff; }
+
+.content__box__list {
+  background: rgba(251, 251, 218, 0.2);
+  padding: 25px;
+  margin-bottom: 15px; }
+
+.content__box__list__text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #404040;
+  margin-bottom: 10px; }
+
+.header__content__zayavka {
+  font-size: 26px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 20px; }
+
+.box__kompanyi__block__right {
+  padding: 35px; }
+
+.zayavki__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000; }
+
+.zayavki__text:hover {
+  color: #3d70ff;
+  transition: 0.2s; }
+
+.block__zayavok {
+  margin-bottom: 15px; }
+
+.line__content__right__block {
+  border: 0.5px solid #ebebeb;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.header__rules__attestation {
+  font-size: 16px;
+  font-weight: 450;
+  color: #585858;
+  margin-bottom: 15px; }
+
+.rules__attestion {
+  font-size: 14px;
+  margin-top: 10px; }
 
 .menu__background {
   background-color: #4b505c;
