@@ -48,6 +48,16 @@
 	border-radius: 0;
 }
 
+.custom-control-label::after{
+	cursor: pointer;
+}
+
+.custom-control-checkbox{
+	padding-left: 0.9rem;
+	cursor: pointer;
+}
+
+
 .modal-header p {
 	font-size: 0.875rem;
 	line-height: 20px;

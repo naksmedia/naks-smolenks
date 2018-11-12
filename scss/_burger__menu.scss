@@ -32,9 +32,11 @@
 }
 
 .menu__navbar .navbar .nav-item .nav__link__two {
-  margin: 0px 20px 0px 20px;
+  margin: 0px 20px 0px 20px;  
   @media screen and (max-width: 992px) {
       padding: 0px 0px 15px;
+      font-weight: 200;
+  line-height: 3;
       }    
 }
 

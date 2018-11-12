@@ -728,9 +728,10 @@ border: 1px red solid;
     background-color: #e6f3ff;
     padding: 35px;
     border-radius: 3px;
+
     @media screen and (max-width: 1199px) {
         margin-bottom: 25px;
-    }    
+    }
 }
 
 .articles__box:hover {
@@ -806,7 +807,7 @@ border: 1px red solid;
     background: -moz-linear-gradient(bottom right, rgba(33, 79, 165, 1.0), rgba(58, 160, 218, 1.0));
     background: linear-gradient(bottom right, rgba(33, 79, 165, 1.0), rgba(58, 160, 218, 1.0));
     margin-top: 25px;
-   
+
 }
 
 .ask__box:hover {
@@ -863,7 +864,7 @@ border: 1px red solid;
     background: -moz-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
     background: linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
     margin-top: 25px;
-    
+
 }
 
 .search__text__header {
@@ -952,7 +953,7 @@ border: 1px red solid;
     background: -moz-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
     background: linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
     margin-top: 25px;
-   
+
 }
 
 .journal__box__img {
@@ -1006,6 +1007,14 @@ border: 1px red solid;
 
     @media screen and (max-width: 320px) {
         display: inline-block;
+
+        margin-bottom: 15px;
+    }
+}
+
+.block__logo__client {
+    @media screen and (max-width: 320px) {
+        text-align: center;
     }
 }
 
@@ -1494,6 +1503,7 @@ border: 1px red solid;
     color: #000;
     line-height: 35px;
     margin-bottom: 35px;
+
     @media screen and (max-width: 320px) {
         font-size: 16px;
         line-height: 25px;
@@ -1602,6 +1612,7 @@ border: 1px red solid;
     border-radius: 3px;
     margin-bottom: 15px;
     max-width: 75%;
+
     @media screen and (max-width: 1375px) {
         max-width: 100%;
     }
@@ -1668,13 +1679,24 @@ border: 1px red solid;
     padding: 10px;
 }
 
+.form-control {
+    font-size: 14px;
+}
+
 .form-control:focus {
     color: #fff;
     background-color: transparent;
     border-color: #ffffff;
     outline: 0;
     box-shadow: none;
-    font-size: 0rem;
+    font-size: 14px;
+}
+
+
+.input-group>.custom-file,
+.input-group>.custom-select,
+.input-group>.form-control {
+    margin-top: 0px;
 }
 
 label[for=search__name__text] {
@@ -1739,7 +1761,7 @@ label[for=type__of__document] {
 .contact__block {
     background-color: #f9f9f9;
     margin-bottom: 10px;
-   }
+}
 
 .contact__white__box {
     background-color: #fff;
@@ -1825,10 +1847,10 @@ label[for=type__of__document] {
     margin-bottom: 15px;
 }
 
-.button__oblast__deatelnosti__list{
+.button__oblast__deatelnosti__list {
     padding: 15px;
     font-size: 16px;
-    background-color: transparent;  
+    background-color: transparent;
     border: none;
     background-color: #494949;
     border-radius: 3px;
@@ -1839,24 +1861,24 @@ label[for=type__of__document] {
     margin-bottom: 35px;
 }
 
-.button__oblast__deatelnosti__list:hover{
+.button__oblast__deatelnosti__list:hover {
     background-color: #363636;
 }
 
-.card{
+.card {
     margin-bottom: 35px;
 }
 
-.text__dopusk{
+.text__dopusk {
     font-size: 24px;
     font-weight: 400;
     color: #494949;
     margin-bottom: 15px;
 }
 
-.img__box__card{
-   width: 50%;
-}
+// .img__box__card{
+//    width: 50%;
+// }
 
 .info__box__head {
     background-color: #fff;
@@ -1866,16 +1888,17 @@ label[for=type__of__document] {
 }
 
 .info__box__head:hover {
-    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);;
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
+    ;
 }
 
-.number__reestr{
+.number__reestr {
     font-size: 16px;
     color: #2e3e60;
-    font-weight: 450;   
+    font-weight: 450;
 }
 
-.header__name__standart{
+.header__name__standart {
     font-size: 16px;
     color: #2e3e60;
     font-weight: 450;
@@ -1892,42 +1915,47 @@ label[for=type__of__document] {
     box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
 }
 
-.number__line__standart{
+.number__line__standart {
     background-color: #fff;
     padding: 25px;
     border-radius: 3px;
     margin-bottom: 25px;
 }
 
-.number__line__standart:hover{
+.number__line__standart:hover {
     box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
 }
 
-.number__reestr__line{
-    font-size: 14px;
-    color: #2e3e60;
-    font-weight: 450; 
-    @media screen and (max-width: 575px) {
-        margin-bottom: 10px;
-    }  
-}
-
-.reestr__number{
+.number__reestr__line {
     font-size: 14px;
     color: #2e3e60;
     font-weight: 450;
+
     @media screen and (max-width: 575px) {
         margin-bottom: 10px;
-    }  
+        background-color: #f7f7f7;
+        padding-left: 10px;
+    }
 }
 
-.header__name__standart__line{
+.reestr__number {
     font-size: 14px;
     color: #2e3e60;
     font-weight: 450;
+
     @media screen and (max-width: 575px) {
         margin-bottom: 10px;
-    }    
+    }
+}
+
+.header__name__standart__line {
+    font-size: 14px;
+    color: #2e3e60;
+    font-weight: 450;
+
+    @media screen and (max-width: 575px) {
+        margin-bottom: 10px;
+    }
 }
 
 // Конец области деятельности
@@ -1946,46 +1974,48 @@ label[for=type__of__document] {
 
 
 
-.header__articles__name{
+.header__articles__name {
     font-size: 24px;
     font-weight: 350;
-    color: #000; 
+    color: #000;
 }
 
 
-.box__author__articles{
+.box__author__articles {
     background-color: #f7faff;
     padding: 15px;
+
     @media screen and (max-width: 1199px) {
         margin-top: 15px;
-    } 
+    }
 }
 
-.author__articles{
-font-size: 16px;
-font-weight: 450;
-color: #657398;
+.author__articles {
+    font-size: 16px;
+    font-weight: 450;
+    color: #657398;
 }
 
-.name__author{
+.name__author {
     font-size: 16px;
     font-weight: 500;
     color: #000;
     margin-top: 10px;
 }
 
-.specialist__author{
+.specialist__author {
     font-size: 14px;
     font-weight: 250;
     color: #000;
 }
 
 
-.text__articles{
+.text__articles {
     font-size: 16px;
     margin-bottom: 15px;
 }
-.header__articles__text{
+
+.header__articles__text {
     font-size: 24px;
     font-weight: 450;
     color: #000;
@@ -1993,32 +2023,33 @@ color: #657398;
     margin-top: 15px;
 }
 
-.box__info__articles__text{
+.box__info__articles__text {
     background-color: rgba(198, 239, 255, 0.2);
     padding: 25px;
     margin-bottom: 15px;
 }
 
-.info__articles__text{
+.info__articles__text {
     font-size: 16px;
     font-weight: 400;
     color: #000;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
 }
 
-.line__text__articles{
+.line__text__articles {
     border: 0.5px solid #ebebeb;
     width: 100%;
     margin-top: 25px;
     margin-bottom: 20px;
 }
 
-.articles__box__two{
+.articles__box__two {
     background-color: #e6f3ff;
     padding: 35px;
     border-radius: 3px;
     margin-top: 25px;
     margin-bottom: 15px;
+
     @media screen and (max-width: 1199px) {
         margin-bottom: 25px;
     }
@@ -2029,46 +2060,48 @@ color: #657398;
     background-color: #d5eafd;
     transition: 0.3s;
 }
+
 // Конец статьи
 
 // Профстандарты
 
 
-.header__prostandart{
+.header__prostandart {
     font-size: 24px;
     font-weight: 600;
     padding-bottom: 35px;
 }
 
-.header__utverjdenie__standarti{
+.header__utverjdenie__standarti {
     font-size: 20px;
     font-weight: 400;
     color: #505050;
     margin-bottom: 35px;
 }
 
-.box__profstandart{
+.box__profstandart {
     padding: 45px;
     background-color: rgba(191, 230, 255, 0.2);
     border-radius: 3px;
     margin-bottom: 15px;
     max-width: 75%;
+
     @media screen and (max-width: 1199px) {
         max-width: 100%;
     }
 }
 
-.box__profstandart:hover{
+.box__profstandart:hover {
     box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
 }
 
-.head__standart{
+.head__standart {
     font-size: 18px;
     font-weight: 450;
     color: #747474;
 }
 
-.name__standart{
+.name__standart {
     font-size: 18px;
     font-weight: 450;
     color: #000000;
@@ -2076,34 +2109,35 @@ color: #657398;
     margin-bottom: 15px;
 }
 
-.number__standart{
+.number__standart {
     font-size: 14px;
     font-weight: 550;
-    color: #000000;    
+    color: #000000;
 }
 
-.text__prikaz__standart{
-  font-size: 14px;
-  font-weight: 400;
-  color: #000;
-  margin-bottom: 15px;
+.text__prikaz__standart {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 15px;
 }
 
 // Конец профстандарты
 
 // Результат поиска
-.header__result{
+.header__result {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
-.result__text{
+.result__text {
     font-size: 18px;
     color: #ec1414;
     background-color: rgba(255, 30, 30, 0.1);
     padding: 25px;
 }
+
 // Конец результат поиска
 
 
@@ -2118,7 +2152,7 @@ color: #657398;
 .header__kompani {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 15px;    
+    margin-bottom: 15px;
 }
 
 
@@ -2127,35 +2161,35 @@ color: #657398;
     padding: 45px;
 }
 
-.box__cok__dopusk{
+.box__cok__dopusk {
     background-color: #2e3f62;
     padding: 25px;
 }
 
-.box__kompanyi__block{
+.box__kompanyi__block {
     background-color: transparent;
 }
 
-.box__cok__dopusk__text{
+.box__cok__dopusk__text {
     color: #fff;
     font-size: 16px;
 }
 
-.content__text__kompanyi{
+.content__text__kompanyi {
     font-size: 16px;
     font-weight: 400;
     color: #000;
     margin-bottom: 15px;
 }
 
-.box__content__text__kompanyi{
+.box__content__text__kompanyi {
     margin-top: 35px;
     padding: 35px;
-    background-color: #fff;    
+    background-color: #fff;
 }
 
 
-.content__box__list{
+.content__box__list {
     background: rgba(251, 251, 218, 0.2);
     padding: 25px;
     margin-bottom: 15px;
@@ -2168,49 +2202,156 @@ color: #657398;
     margin-bottom: 10px;
 }
 
-.header__content__zayavka{
+.header__content__zayavka {
     font-size: 26px;
     font-weight: 500;
     color: #000;
     margin-bottom: 20px;
 }
 
-.box__kompanyi__block__right{
+.box__kompanyi__block__right {
     padding: 35px;
 }
 
-.zayavki__text{   
+.zayavki__text {
     font-size: 14px;
     font-weight: 400;
-    color: #000;          
+    color: #000;
 }
 
-.zayavki__text:hover{   
-    color: #3d70ff;    
-    transition: 0.2s;      
+.zayavki__text:hover {
+    color: #3d70ff;
+    transition: 0.2s;
 }
 
-.block__zayavok{   
+.block__zayavok {
     margin-bottom: 15px;
 }
 
 .line__content__right__block {
     border: 0.5px solid #ebebeb;
-   margin-top: 25px; 
-   margin-bottom: 25px;  
-    }
-.header__rules__attestation{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.header__rules__attestation {
     font-size: 16px;
     font-weight: 450;
     color: #585858;
     margin-bottom: 15px;
 }
 
-.rules__attestion{
+.rules__attestion {
     font-size: 14px;
-    margin-top: 10px;    
+    margin-top: 10px;
 }
 
 
 // Конец о компании
 
+
+// Реестр сасв
+
+.reestr__box {
+    background-color: #f9f9f9;
+    margin-bottom: 35px;
+}
+
+.header__reestr__sasv {
+    font-size: 26px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.personal__cok__acst__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.header__name__selected__reestr {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.box__search__subject__form {
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.header__text__search__subject {
+    font-size: 20px;
+    font-weight: 500;
+    color: #696969;
+    margin-bottom: 20px;
+}
+
+.header__form__fio {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+label[for=search__subject__restr] {
+    font-size: 16px;
+}
+
+.form__subject__search {
+    border-radius: 3px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    width: 100%;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+    padding: 9.5px;
+    margin-bottom: 15px;
+}
+
+.form__subject__search:focus {
+    border: 1px solid #98b9da;
+    transition: 0.2s;
+    color: #98b9da;
+}
+
+label[for=type__of__viev] {
+    font-size: 16px;
+}
+
+#type__of__viev {
+    border-radius: 3px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    width: 100%;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+    padding: 9.5px;
+    cursor: pointer;
+}
+
+select[id=type__of__viev] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+#type__of__viev:focus {
+    border: 1px solid #98b9da;
+    transition: 0.2s;
+    color: #98b9da;
+}
+
+.header__subject__list {
+    padding: 35px;
+    background-color: #fff;
+}
+
+
+
+// Конец реестр сасв
