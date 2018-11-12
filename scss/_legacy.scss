@@ -528,8 +528,7 @@ border: 1px red solid;
 .die__for__text {
     background-color: rgba(45, 69, 125, 0.8);
     width: 80%;
-    padding: 35px;
-    opacity: 0;
+    padding: 35px;   
 
     @media screen and (max-width: 992px) {
         opacity: 1;
@@ -550,7 +549,7 @@ border: 1px red solid;
     background-size: cover;
     width: 100%;
     border-radius: 3px;
-    opacity: 1;
+
 }
 
 .block__news__box {
@@ -567,13 +566,6 @@ border: 1px red solid;
 
 }
 
-.block__news__box:hover .die__for__text {
-    opacity: 1;
-    transition: 0.3s;
-    margin-top: 100px;
-}
-
-
 
 /*--------------------- Блок 2 Новости (block right - 2) ---------------------*/
 
@@ -587,8 +579,7 @@ border: 1px red solid;
 .die__for__text__two {
     background-color: rgba(45, 69, 125, 0.8);
     width: 30%;
-    padding: 35px;
-    opacity: 0;
+    padding: 35px;  
 
     @media screen and (max-width: 992px) {
         opacity: 1;
@@ -616,11 +607,6 @@ border: 1px red solid;
     opacity: 1;
 }
 
-.block__news__box__two:hover .die__for__text__two {
-    opacity: 1;
-    transition: 0.3s;
-    margin-top: 100px;
-}
 
 /*--------------------- Блок 2 Новости (подблок основных новостей) ---------------------*/
 
@@ -685,7 +671,6 @@ border: 1px red solid;
     border-radius: 3px;
     width: 45%;
     padding: 10px;
-
     @media screen and (max-width: 360px) {
         width: 100%;
     }
@@ -728,6 +713,7 @@ border: 1px red solid;
     background-color: #e6f3ff;
     padding: 35px;
     border-radius: 3px;
+    margin-bottom: 25px;
 
     @media screen and (max-width: 1199px) {
         margin-bottom: 25px;
@@ -806,7 +792,9 @@ border: 1px red solid;
     background: -webkit-linear-gradient(bottom right, rgba(33, 79, 165, 1.0), rgba(58, 160, 218, 1.0));
     background: -moz-linear-gradient(bottom right, rgba(33, 79, 165, 1.0), rgba(58, 160, 218, 1.0));
     background: linear-gradient(bottom right, rgba(33, 79, 165, 1.0), rgba(58, 160, 218, 1.0));
-    margin-top: 25px;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 25px;
+    }
 
 }
 
@@ -863,7 +851,9 @@ border: 1px red solid;
     background: -webkit-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
     background: -moz-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
     background: linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
-    margin-top: 25px;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 25px;
+    }
 
 }
 
@@ -952,7 +942,9 @@ border: 1px red solid;
     background: -webkit-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
     background: -moz-linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
     background: linear-gradient(bottom right, rgba(33, 79, 165, 0.7), rgba(58, 160, 218, 0.7));
-    margin-top: 25px;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 25px;
+    }
 
 }
 
@@ -1460,9 +1452,11 @@ border: 1px red solid;
     border-radius: 3px;
     padding: 10px;
     width: 68%;
+    float: right;
 
     @media screen and (max-width: 320px) {
         margin-top: 35px;
+        width: 100%;
     }
 }
 
@@ -1473,6 +1467,7 @@ border: 1px red solid;
 
     @media screen and (max-width: 320px) {
         display: none;
+        width: 100%;
     }
 
 }
@@ -2254,7 +2249,7 @@ label[for=type__of__document] {
 
 .reestr__box {
     background-color: #f9f9f9;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 }
 
 .header__reestr__sasv {
@@ -2348,10 +2343,131 @@ select[id=type__of__viev] {
 }
 
 .header__subject__list {
-    padding: 35px;
+    padding: 25px 25px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.name__list {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+button:focus {
+    outline: none;
+}
+
+.click__named__list {
+    font-size: 14px;
+    font-weight: 300;
+    color: #3c86be;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    font-weight: 500;
+}
+
+.click__named__list:hover {
+    color: #1f5e8f;
+    transition: 0.2s;  
+}
+.card{
+    margin-bottom: 10px;
+    border: none;
+}
+
+.card-header {
+    border-radius: 3px;
     background-color: #fff;
 }
 
+.card-header:hover {
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
+}
+
+.additional__information {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    text-align: left;
+    padding: 0;
+}
+
+.card-body {
+    background-color: #f0f0f0;
+    padding: 25px;
+}
 
 
+.header__additional__information__list {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+
+.subtitle__additional__information__list {
+    font-size: 14px;
+    font-weight: 550;
+    color: #2e3e60;
+}
+.number__list__found__subject{
+    font-size: 16px;
+    font-weight: 500;
+    color: #2e3e60;
+}
+
+.page-link{
+    color: #3c86be;
+}
+
+.page-link:hover{
+    transition: 0.2s;
+}
+
+.page-link:focus{
+box-shadow: none;
+outline: none;
+}
+
+.deploy__more{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 450;
+    color: #3c86be;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.extract__form__svarshik{  
+    padding: 35px;
+    background-color: transparent;
+    border: none;
+    background-color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #1d5a88;
+    text-align: left;
+    p:hover{
+        margin-left: 10px;
+        transition: 0.2s;
+            }
+}
+.extract__form__svarshik a{
+    color: #1d5a88;}
+
+.extract__form__svarshik:hover{  
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
+  
+}
 // Конец реестр сасв
