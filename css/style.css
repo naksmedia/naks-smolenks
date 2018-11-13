@@ -1236,6 +1236,17 @@ border: 1px red solid;
     margin-top: 25px;
     margin-bottom: 25px; } }
 
+.header__tag__theme {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 15px; }
+
+.all__news {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3b537e; }
+
 .otsput {
   margin-bottom: 35px; }
 
@@ -1946,20 +1957,16 @@ button:focus {
 .extract__form__svarshik:hover {
   box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09); }
 
-.sasv__link {
+.reestr__link__naks {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 25px; }
 
-.name__list__two {
-  font-size: 14px;
-  font-weight: 400;
-  color: #000; }
-
-.additional__information__two {
-  font-size: 12px;
-  font-weight: 400;
-  color: #000; }
+.line__text__one__reestr {
+  border: 0.5px solid #ebebeb;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px; }
 
 .menu__background {
   background-color: #4b505c;
