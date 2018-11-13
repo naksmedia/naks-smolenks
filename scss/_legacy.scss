@@ -434,7 +434,7 @@ border: 1px red solid;
     max-width: 100%;
 }
 
-.content__header__uslugi {
+.header__uslugi {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 35px;
@@ -1123,10 +1123,17 @@ border: 1px red solid;
     margin-left: 25px;
 }
 
+.razrabotano__basement__footer{
+    text-align: right;
+    @media screen and (max-width: 320px) {
+        text-align: center;
+    }
+}
+
 .razrabotano__v__naks__media {
     font-size: 12px;
     font-weight: 500;
-    color: #858585;
+    color: #858585;  
 }
 
 
@@ -1860,9 +1867,9 @@ label[for=type__of__document] {
     background-color: #363636;
 }
 
-.card {
-    margin-bottom: 35px;
-}
+// .card {
+//     margin-bottom: 35px;
+// }
 
 .text__dopusk {
     font-size: 24px;
@@ -1871,9 +1878,13 @@ label[for=type__of__document] {
     margin-bottom: 15px;
 }
 
-// .img__box__card{
-//    width: 50%;
-// }
+.box__img{
+    background-color: #fff;
+     border: #c9c9c9 1px solid;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
 
 .info__box__head {
     background-color: #fff;
@@ -1882,10 +1893,16 @@ label[for=type__of__document] {
     margin-bottom: 25px;
 }
 
+.img__box__dopusk img{
+margin-right: 15px;
+width: 15%;
+margin-bottom: 15px;
+margin-left: 15px;
+}
+
 .info__box__head:hover {
     box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
-    ;
-}
+    }
 
 .number__reestr {
     font-size: 16px;
@@ -2249,7 +2266,7 @@ label[for=type__of__document] {
 
 .reestr__box {
     background-color: #f9f9f9;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .header__reestr__sasv {
@@ -2303,7 +2320,7 @@ label[for=search__subject__restr] {
     width: 100%;
     border: 1px solid #ced4da;
     font-size: 14px;
-    padding: 9.5px;
+    padding: 10px;
     margin-bottom: 15px;
 }
 
@@ -2325,16 +2342,17 @@ label[for=type__of__viev] {
     width: 100%;
     border: 1px solid #ced4da;
     font-size: 14px;
-    padding: 9.5px;
+    padding: 0.7rem;
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
-select[id=type__of__viev] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-}
+// select[id=type__of__viev] {
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     -ms-appearance: none;
+//     appearance: none;
+// }
 
 #type__of__viev:focus {
     border: 1px solid #98b9da;
@@ -2400,7 +2418,7 @@ button:focus {
 
 .card-body {
     background-color: #f0f0f0;
-    padding: 25px;
+    padding: 25px;   
 }
 
 
@@ -2470,4 +2488,25 @@ outline: none;
     box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
   
 }
+
+.sasv__link{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.name__list__two{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.additional__information__two{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+}
+
 // Конец реестр сасв
+
+
+

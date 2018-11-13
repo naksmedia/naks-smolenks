@@ -61,8 +61,8 @@
       <div class="row">
         <div class="col-xl-4">
           <p class="header__reestr__sasv" id="reestr__sasv__oborudovanie">
-            Выписка из реестра САСв Ростехнадзора
-          </p>
+            Выписка из реестра САСв Ростехнадзора            
+          </p>          
           <p class="personal__cok__acst__text">
             Персонал сварочного производства, аттестованного в аттестационном
             центре <strong> ООО "ЗАПАДНО-СИБИРСКИЦ ЦОК" (АЦСТ - 11)</strong>
@@ -74,8 +74,8 @@
       <div class="row">
         <div class="col-xl-4" id="">
           <p class="header__name__selected__reestr">
-              Выписка из реестра <br> сварочного оборудования
-          </p>
+              Выписка из реестра <br> сварочного оборудования           
+          </p>         
         </div>
         <div class="col-xl-3 d-inline-block align-self-center" id=""> 
           <p class="number__list__found__subject">Найдено: 1-5 из 361</p> 
@@ -114,29 +114,30 @@
               Поиск субъекта
             </p>
             <div class="form-row">
-              <div class="col-xl-6">
-                <label for="search__subject__restr">Ф.И.О</label>
+              <div class="col-xl-12">
+                <label for="search__subject__restr">Номер свидетельства</label>
                 <input type="text" class="form__subject__search" id="">
+              </div>              
+            </div>
+            <div class="form-row">
+              <div class="col-xl-6">
+                <label for="search__subject__restr">Срок действия с:</label>
+                <input type="date" class="form__subject__search">   
               </div>
               <div class="col-xl-6">
-                <label for="type__of__viev">Вид аттестации</label>
-                <select id="type__of__viev" class="drop__down__form">
-                  <option selected="">Вн</option>
-                  <option>Дп</option>
-                  <option>Пв</option>
-                  <option>Пр</option>
-                </select>
+                <label for="search__subject__restr">По:</label>
+                <input type="date" class="form__subject__search">   
               </div>
             </div>
             <div class="form-row">
               <div class="col-xl-12">
-                <label for="search__subject__restr">Место работы</label>
+                <label for="search__subject__restr">Организация заявитель</label>
                 <input type="text" class="form__subject__search" id="">
-              </div>
+              </div>   
             </div>
             <div class="form-row">
-              <div class="col-xl-6">
-                <label for="type__of__viev">Удостоверение</label>
+              <div class="col-xl-12">
+                <label for="type__of__viev">Виде аттестации</label>
                 <select id="type__of__viev" class="drop__down__form">
                   <option selected="">АР-1ГАЦ</option>
                   <option>БР-1АЦ</option>
@@ -144,28 +145,8 @@
                   <option>ВВР-1АЦ</option>
                 </select>
               </div>
-              <div class="col-xl-6">
-                <label for="search__subject__restr">Дата выдачи с</label>
-                <input type="text" class="form__subject__search" id="">
-              </div>
-
-            </div>
-            <div class="form-row">
-              <div class="col-xl-6">
-                <label for="type__of__viev">Уровень</label>
-                <select id="type__of__viev" class="drop__down__form">
-                  <option selected="">АР-1ГАЦ</option>
-                  <option>БР-1АЦ</option>
-                  <option>БР-ГАЦ</option>
-                  <option>ВВР-1АЦ</option>
-                </select>
-              </div>
-              <div class="col-xl-6">
-                <label for="search__subject__restr">По</label>
-                <input type="text" class="form__subject__search" id="">
-              </div>
-
-            </div>
+             
+            </div> 
             <button type="submit" class="button__search__document" onclick="return false" id="header__doc">
               Найти
             </button>
@@ -493,11 +474,8 @@
                 </div>
               
             </div>
-          </div>
-          
-          <button class="deploy__more">
-              Развернуть еще
-            </button>
+          </div>          
+         
 
         </div>
         

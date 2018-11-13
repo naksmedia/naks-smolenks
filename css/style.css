@@ -330,7 +330,7 @@ border: 1px red solid;
   padding: 55px 0px 55px 0px;
   max-width: 100%; }
 
-.content__header__uslugi {
+.header__uslugi {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 35px; }
@@ -863,6 +863,12 @@ border: 1px red solid;
 
 .naks__media__logo {
   margin-left: 25px; }
+
+.razrabotano__basement__footer {
+  text-align: right; }
+  @media screen and (max-width: 320px) {
+    .razrabotano__basement__footer {
+      text-align: center; } }
 
 .razrabotano__v__naks__media {
   font-size: 12px;
@@ -1455,13 +1461,16 @@ label[for=type__of__document] {
 .button__oblast__deatelnosti__list:hover {
   background-color: #363636; }
 
-.card {
-  margin-bottom: 35px; }
-
 .text__dopusk {
   font-size: 24px;
   font-weight: 400;
   color: #494949;
+  margin-bottom: 15px; }
+
+.box__img {
+  background-color: #fff;
+  border: #c9c9c9 1px solid;
+  border-radius: 3px;
   margin-bottom: 15px; }
 
 .info__box__head {
@@ -1469,6 +1478,12 @@ label[for=type__of__document] {
   padding: 25px;
   border-radius: 3px;
   margin-bottom: 25px; }
+
+.img__box__dopusk img {
+  margin-right: 15px;
+  width: 15%;
+  margin-bottom: 15px;
+  margin-left: 15px; }
 
 .info__box__head:hover {
   box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09); }
@@ -1748,7 +1763,7 @@ label[for=type__of__document] {
 
 .reestr__box {
   background-color: #f9f9f9;
-  margin-bottom: 10px; }
+  margin-bottom: 30px; }
 
 .header__reestr__sasv {
   font-size: 26px;
@@ -1794,7 +1809,7 @@ label[for=search__subject__restr] {
   width: 100%;
   border: 1px solid #ced4da;
   font-size: 14px;
-  padding: 9.5px;
+  padding: 10px;
   margin-bottom: 15px; }
 
 .form__subject__search:focus {
@@ -1813,14 +1828,9 @@ label[for=type__of__viev] {
   width: 100%;
   border: 1px solid #ced4da;
   font-size: 14px;
-  padding: 9.5px;
-  cursor: pointer; }
-
-select[id=type__of__viev] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none; }
+  padding: 0.7rem;
+  cursor: pointer;
+  margin-bottom: 15px; }
 
 #type__of__viev:focus {
   border: 1px solid #98b9da;
@@ -1935,6 +1945,21 @@ button:focus {
 
 .extract__form__svarshik:hover {
   box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09); }
+
+.sasv__link {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 25px; }
+
+.name__list__two {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000; }
+
+.additional__information__two {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000; }
 
 .menu__background {
   background-color: #4b505c;

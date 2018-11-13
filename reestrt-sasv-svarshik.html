@@ -22,7 +22,6 @@
 
   <!-- <link rel="stylesheet" href="fonts/font.css"> -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/modal.css">
 
   <!-- HEADER -->
@@ -108,6 +107,7 @@
       </div>
 
       <div class="row">
+        
         <div class="col-xl-4">
           <div class="box__search__subject__form">
             <p class="header__text__search__subject">
@@ -146,7 +146,7 @@
               </div>
               <div class="col-xl-6">
                 <label for="search__subject__restr">Дата выдачи с</label>
-                <input type="text" class="form__subject__search" id="">
+                <input type="date" class="form__subject__search">                
               </div>
 
             </div>
@@ -162,7 +162,8 @@
               </div>
               <div class="col-xl-6">
                 <label for="search__subject__restr">По</label>
-                <input type="text" class="form__subject__search" id="">
+                <input type="date" class="form__subject__search">  
+                
               </div>
 
             </div>
@@ -493,11 +494,8 @@
                 </div>
               
             </div>
-          </div>
-          
-          <button class="deploy__more">
-              Развернуть еще
-            </button>
+          </div>          
+         
 
         </div>
         
@@ -621,7 +619,6 @@
   <!-- Include FOOTER -->
   <div w3-include-html="includes/footer.html"></div>
   <!-- End Include FOOTER -->
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
