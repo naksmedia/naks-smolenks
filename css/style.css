@@ -335,6 +335,11 @@ border: 1px red solid;
   font-weight: 600;
   margin-bottom: 35px; }
 
+.content__header__uslugi {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 35px; }
+
 .box__uslug__two {
   max-width: 1215px; }
 
