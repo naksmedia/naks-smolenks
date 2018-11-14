@@ -1250,7 +1250,11 @@ border: 1px red solid;
     background-color: #ffffff;
     padding: 45px;
     margin-bottom: 25px;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 25px;
+    }
 }
+
 
 .text__info__vsootvetstvii {
     font-size: 16px;
@@ -1283,7 +1287,6 @@ border: 1px red solid;
     color: #fff;
     display: block;
     font-size: 16px;
-
     @media screen and (max-width: 320px) {
         font-size: 12px;
     }
@@ -1322,7 +1325,6 @@ border: 1px red solid;
     font-size: 16px;
     font-weight: 500;
     color: #404040;
-
     @media screen and (max-width: 320px) {
         flex-direction: column;
     }
@@ -1331,7 +1333,7 @@ border: 1px red solid;
 .rules__box {
     padding: 35px;
     background-color: #ffffff;
-    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .rules__text {
@@ -1347,6 +1349,9 @@ border: 1px red solid;
 .service_information_acccp__text__box {
     background-color: #ffffff;
     padding: 45px;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 25px;
+    }
 }
 
 .acccp__text {
